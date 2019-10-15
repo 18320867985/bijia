@@ -1,0 +1,96 @@
+
+@import "../var.scss";
+.index {
+
+
+    .content {
+        padding: 0 30px;
+
+        .tab {
+            display: none;
+
+            li {
+                float: left;
+                margin: 0 20px;
+                font-size: 16px;
+                color: $text-main;
+                line-height: 2;
+                cursor: pointer;
+
+                &.active {
+                    color: $bg-active;
+                    border-bottom: 4px solid;
+                }
+            }
+        }
+
+        .infor {
+            margin-top: 30px;
+
+            li {
+                margin: 30px 0;
+
+                span {
+                    display: inline-block;
+                    width: 90px;
+                    margin-right: 20px;
+                    text-align: right;
+                    font-size: 14px;
+                    color: $text-muted;
+                }
+
+                a {
+                    font-size: 14px;
+                    color: $text-special;
+
+                    &:hover {
+                      
+                        color: darken(#f1091c,10%);
+                    }
+                }
+
+                .username {
+                    color: $text-muted;
+                }
+            }
+        }
+
+        .goReview {
+            display: block;
+            width: 191px;
+            margin-bottom: 50px;
+            margin-left: 138px;
+            line-height: 44px;
+            background-color: $bg-active;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: 3px;
+            color: $text-white;
+            border: none;
+
+            &:hover {
+                background-color: darken($bg-active,10%);
+                color: darken($text-white,10%);
+            }
+        }
+
+        &.active {
+            .goReview {
+                display: none;
+            }
+
+            .tab {
+                display: block;
+            }
+
+            .infor {
+                border-top: 1px solid #f2f2f2;
+
+                a {
+                    color: $text-main;
+                }
+            }
+        }
+    }
+}

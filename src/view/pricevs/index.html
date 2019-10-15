@@ -1,0 +1,1204 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>价格对比</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="Keywords" content="塑金比价系统" />
+    <meta name="Description" content="塑金比价系统" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/cstFonts/index/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/view/pricevs.css" />
+
+    <!--[if lte IE 8]>
+        <script src="../../static/js/html5shiv.js"  type="text/javascript" charset="utf-8"></script>
+         <link rel="stylesheet" type="text/css" href="../../static/css/ie8.css" />
+    <![endif]-->
+    <!--check css-->
+    <script src="../../static/js/modernizr-2.6.2.min.js" defer type="text/javascript" charset="utf-8"></script>
+    <!--css3 prefix-->
+    <script src="../../static/js/prefix-css3.min.js" defer type="text/javascript" charset="utf-8"></script>
+    <script src="../../static/js/common-cdn.js" defer type="text/javascript" charset="utf-8"></script>
+
+    <!--[if lte IE 9]>
+         <script src="../../static/js/placeholder.js" defer type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+
+    <script data-parent="umd" data-umd="pricevs" defer src="../../static/js/view/pricevs.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body class="pricevs">
+
+    <!--header-->
+    <include src="../../template/_header.html" data-nav  data-index="1"></include>
+
+    <!--searchbox-->
+    <include src="../../template/_searchbox.html"></include>
+    
+  
+    <!--content-->
+    <section class="pricevs-cnt">
+
+        <!--搜索为空数据 -->
+        <div class="search-not-data ctr  d-hide">
+            <img src="../../static/images/search-not-data.png" alt="搜索为空数据 图标" />
+        </div>
+
+        <!-- 搜索列表头部 三级联动-->
+        <div class="pricevs-cnt-srh ctr ie8-border">
+
+            <!--品名-->
+            <div class="_item " id="pinming">
+                <div class=" tb relative table-fixed ">
+                    <div class="_item-l   tb-cell">
+                        品名:
+                    </div>
+                    <div class="_item-m  tb-cell">
+                        <ul class="v-radiobtn-group">
+                            <li class="v-radiobtn-item active " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="_item-btn tb-cell" data-up="更多" data-sub="收起">
+                        <span>更多</span>  <span class="iconfont iconarow-b"></span>
+                    </div>
+
+                </div>
+            </div>
+            
+
+            <!--厂商-->
+            <div class="_item ">
+                <div class=" tb relative table-fixed "  id="chanshang">
+                    <div class="_item-l   tb-cell">
+                        厂商:
+                    </div>
+                    <div class="_item-m  tb-cell">
+                        <ul class=" v-radiobtn-group">
+
+                            <li class="v-radiobtn-item active" data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item  " data-val="台湾奇美">台湾奇美台湾奇美台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="_item-btn tb-cell" data-up="更多" data-sub="收起">
+                        <span>更多</span>  <span class="iconfont iconarow-b"></span>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--牌号-->
+            <div class="_item ">
+                <div class=" tb relative table-fixed " id="paihao">
+                    <div class="_item-l   tb-cell">
+                        牌号:
+                    </div>
+                    <div class="_item-m  tb-cell">
+                        <ul class="v-radiobtn-group">
+
+                            <li class="v-radiobtn-item active" data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+
+
+
+                        </ul>
+
+                    </div>
+
+                    <div class="_item-btn tb-cell" data-up="更多" data-sub="收起">
+                        <span>更多</span>  <span class="iconfont iconarow-b"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--搜索结果-->
+            <ul class="_result cfx">
+                <li class=" _result-ttl">
+                    筛选条件：
+                </li>
+                <li class="_result-item _result-all">
+                    <a>全部</a>
+                </li>
+                <!--品名-->
+                <li class="_result-item _result-pm">
+                    <a>abc</a><span>&times;</span>
+                </li>
+                <!--厂商-->
+                <li class="_result-item _result-pm">
+                    <a>台湾台化</a><span>&times;</span>
+                </li>
+                <!--品名-->
+                <li class="_result-item _result-pm">
+                    <a>AG15A1 </a><span>&times;</span>
+                </li>
+            </ul>
+        </div>
+
+        <!--搜索列表内容 -->
+        <div class="pricevs-cnt-dy ctr cfx">
+
+            <!--右边-->
+            <div class="_r fr">
+                <!--今日行情-->
+                <div class="_r-hq cfx  ie8-border">
+                    <h3 class="_r-hq-ttl">
+                        今<img src=" ../../static/images/index/q.png" alt="Alternate Text" />行情
+                        <a href="javascript:;">更多+</a>
+                    </h3>
+                    <ul class="_r-hq-lst">
+                        <li>
+                            <a class="elp" href="#">
+                                <span class="">12:34</span>
+                                <img src=" ../../static/images/index/hq1.png" alt="今日行情 icon" />
+                                ABS塑料原料华东地区今日价格上涨塑料原料华东地区今日价格上涨
+                            </a>
+
+                        </li>
+                        <li>
+                            <a class="elp" href="#">
+                                <span class="">12:34</span>
+                                <img src=" ../../static/images/index/hq2.png" alt="今日行情 icon" />
+                                ABS塑料原料华东地区今日价格上涨
+                            </a>
+                        </li>
+                        <li>
+                            <a class="elp" href="#">
+                                <span class="">12:34</span>
+                                <img src=" ../../static/images/index/hq3.png" alt="今日行情 icon" />
+                                ABS塑料原料华东地区今日价格上涨
+                            </a>
+                        </li>
+                        <li>
+                            <a class="elp not-icon" href="#">
+                                <span class="">12:34</span>
+                                ABS塑料原料华东地区今日价格上涨
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="elp not-icon" href="#">
+                                <span class="">12:34</span>
+                                ABS塑料原料华东地区今日价格上涨
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- 品名日评-->
+                <div class="_r-rp  cfx  ie8-border">
+                    <div class="_b-l">
+
+                        <!--品名日评-->
+                        <div class="_cnt-l-t">
+                            <h3 class="_cnt-l-ttl">
+                                品名日评
+                                <a href="javascript:;">更多+</a>
+                            </h3>
+                        </div>
+
+                        <!-- 内容列表-->
+                        <ul class="_b-l-lst">
+                            <!-- 7个列表-->
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <!-- 上游动态-->
+                <div class="_r-dt  ie8-border">
+                    <div class="_b-r ">
+
+                        <!--行业知识-->
+                        <div class="_cnt-l-t bfc">
+
+                            <h3 class="_cnt-l-ttl">
+                                上游动态
+                                <a href="javascript:;">更多+</a>
+                            </h3>
+                        </div>
+
+                        <!-- 内容列表-->
+
+                        <ul class="_b-r-lst">
+
+                            <li class="_b-r-lst-itm">
+                                <a href="#">
+                                    <h4 class="__ttl elp">聚四氟乙烯微孔薄膜的应用</h4>
+
+                                    <section class="__cnt bfc">
+                                        <div class="fl __img">
+                                            <img src="../../static/images/index/htzx-hyxw-banner02.png" alt="行业知识图" />
+                                        </div>
+
+                                        <p class="elp-2">作为聚四氟乙烯材料加工企业抓安全生产就要按标准条例严格执行。国家职业病诊断标准和处理标...</p>
+                                        <div class="__date">02-14</div>
+                                    </section>
+                                </a>
+
+                            </li>
+
+                            <li class="_b-r-lst-itm">
+                                <a href="#">
+                                    <h4 class="__ttl elp">聚四氟乙烯微孔薄膜的应用</h4>
+
+                                    <section class="__cnt bfc">
+                                        <div class="fl __img">
+                                            <img src="../../static/images/index/htzx-hyxw-banner02.png" alt="行业知识图" />
+                                        </div>
+
+                                        <p class="elp-2">作为聚四氟乙烯材料加工企业抓安全生产就要按标准条例严格执行。国家职业病诊断标准和处理标...</p>
+                                        <div class="__date">02-14</div>
+                                    </section>
+                                </a>
+
+                            </li>
+
+                            <li class="_b-r-lst-itm">
+                                <a href="#">
+                                    <h4 class="__ttl elp">聚四氟乙烯微孔薄膜的应用</h4>
+
+                                    <section class="__cnt bfc">
+                                        <div class="fl __img">
+                                            <img src="../../static/images/index/htzx-hyxw-banner02.png" alt="行业知识图" />
+                                        </div>
+
+                                        <p class="elp-2">作为聚四氟乙烯材料加工企业抓安全生产就要按标准条例严格执行。国家职业病诊断标准和处理标...</p>
+                                        <div class="__date">02-14</div>
+                                    </section>
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--左边 搜索结果列表-->
+            <div class="_l  ie8-border">
+
+                <!--大的表格-->
+                <div class="_l-tb">
+
+                    <!--ttl-->
+                    <div class="_l-tb-ttl tb tb-fixed">
+                        <div class="__item1 tb-cell">
+                            品名
+                        </div>
+                        <div class="__item2 tb-cell">
+                            厂商
+                        </div>
+                        <div class="__item3 tb-cell">
+                            牌号
+                        </div>
+                        <div class="__item4 tb-cell">
+                            今日价格(元/吨)
+                        </div>
+                        <div class="__item5 tb-cell">
+                            交货地
+                        </div>
+                        <div class="__item6 tb-cell">
+                            城市价格对比
+                        </div>
+                    </div>
+
+                    <!--cnt-->
+                    <div class="_l-tb-bd ">
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美台湾奇美台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell  ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美台湾奇美台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell  ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美台湾奇美台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell  ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美台湾奇美台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell  ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美台湾奇美台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell  ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美台湾奇美台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell  ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美台湾奇美台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell  ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美台湾奇美台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell  ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美台湾奇美台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell  ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美台湾奇美台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell  ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class="__item tb  tb-fixed table-100">
+
+                            <div class="__item1 tb-cell ">
+                                ABS
+                            </div>
+                            <div class="__item2 tb-cell ">
+                                台湾奇美
+                            </div>
+                            <div class="__itm3 tb-cell ">
+                                DFDA-7144
+                            </div>
+                            <div class="__item4 tb-cell ">
+                                ￥15000.00
+                            </div>
+                            <div class="__item5 tb-cell ">
+                                东莞
+                            </div>
+                            <div class="__item6 tb-cell ">
+                                <a class="__btn " href="price-list.html">价格对比</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 分页-->
+                    <div class="pricevs-cnt-paging">
+                        <div class="paging" style="text-align:center"></div>
+                    </div>
+                 
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--icon-->
+    <include src="../../template/_icon.html"></include>
+
+    <!--footer-->
+    <include src="../../template/_footer.html"></include>
+
+    <!--置顶-->
+    <div class="zhiding self">
+        <img src="../../static/images/index/zhiding.png" alt="置顶" title="到页面顶部" />
+        <!--<span class="iconicon-test iconfont"></span>-->
+    </div>
+
+</body>
+
+</html>

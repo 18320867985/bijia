@@ -1,0 +1,999 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>物性表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/cstFonts/index/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/view/matter.css" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lte IE 8]>
+        <script src="../../static/js/html5shiv.js"  type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="../../static/css/ie8.css" />
+    <![endif]-->
+    <!--check css-->
+    <script src="../../static/js/modernizr-2.6.2.min.js" defer type="text/javascript" charset="utf-8"></script>
+    <!--css3 prefix-->
+    <script src="../../static/js/prefix-css3.min.js" defer type="text/javascript" charset="utf-8"></script>
+    <script src="../../static/js/common-cdn.js" defer type="text/javascript" charset="utf-8"></script>
+
+    <!--[if lte IE 9]>
+         <script src="../../static/js/placeholder.js" defer type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+
+    <script data-parent="umd" data-umd="matter" defer src="../../static/js/view/matter.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body class="matter">
+
+    <!--header-->
+    <include src="../../template/_header.html" data-nav  data-index="5"></include>
+
+    <!--searchbox-->
+    <include src="../../template/_searchbox.html"></include>
+
+
+    <!--content-->
+    <section class="matter-cnt">
+        <!--搜索为空数据 -->
+        <div class="search-not-data ctr  d-hide">
+            <img src="../../static/images/search-not-data.png" alt="搜索为空数据 图标" />
+        </div>
+
+        <!-- 搜索列表头部 三级联动-->
+        <div class="matter-cnt-srh ctr ie8-border">
+
+            <!--品名-->
+            <div class="_item " id="pinming">
+                <div class=" tb relative table-fixed ">
+                    <div class="_item-l   tb-cell">
+                        品名:
+                    </div>
+                    <div class="_item-m  tb-cell">
+                        <ul class="v-radiobtn-group">
+                            <li class="v-radiobtn-item active " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+                            <li class="v-radiobtn-item " data-val="abs">abs</li>
+                            <li class="v-radiobtn-item " data-val="pom">pom</li>
+                            <li class="v-radiobtn-item " data-val="aes">aes</li>
+                            <li class="v-radiobtn-item " data-val="pa66">pa66</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="_item-btn tb-cell" data-up="更多" data-sub="收起">
+                        <span>更多</span>  <span class="iconfont iconarow-b"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--厂商-->
+            <div class="_item ">
+                <div class=" tb relative table-fixed " id="chanshang">
+                    <div class="_item-l   tb-cell">
+                        厂商:
+                    </div>
+                    <div class="_item-m  tb-cell">
+                        <ul class=" v-radiobtn-group">
+
+                            <li class="v-radiobtn-item active" data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item  " data-val="台湾奇美">台湾奇美台湾奇美台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                            <li class="v-radiobtn-item " data-val="台湾奇美">台湾奇美</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="_item-btn tb-cell" data-up="更多" data-sub="收起">
+                        <span>更多</span>  <span class="iconfont iconarow-b"></span>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--牌号-->
+            <div class="_item ">
+                <div class=" tb relative table-fixed " id="paihao">
+                    <div class="_item-l   tb-cell">
+                        牌号:
+                    </div>
+                    <div class="_item-m  tb-cell">
+                        <ul class="v-radiobtn-group">
+
+                            <li class="v-radiobtn-item active" data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+                            <li class="v-radiobtn-item " data-val="AG15A1">AG15A1</li>
+
+
+
+                        </ul>
+
+                    </div>
+
+                    <div class="_item-btn tb-cell" data-up="更多" data-sub="收起">
+                        <span>更多</span>  <span class="iconfont iconarow-b"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--搜索结果-->
+            <ul class="_result cfx">
+                <li class=" _result-ttl">
+                    筛选条件：
+                </li>
+                <li class="_result-item _result-all">
+                    <a>全部</a>
+                </li>
+                <!--品名-->
+                <li class="_result-item _result-pm">
+                    <a>abc</a><span>&times;</span>
+                </li>
+                <!--厂商-->
+                <li class="_result-item _result-pm">
+                    <a>台湾台化</a><span>&times;</span>
+                </li>
+                <!--品名-->
+                <li class="_result-item _result-pm">
+                    <a>AG15A1 </a><span>&times;</span>
+                </li>
+            </ul>
+
+        </div>
+
+        <!--下拉选择  -->
+        <div class="matter-cnt-slt ctr">
+            <ul class="_slt">
+
+                <li class="_item v-dropdown " data-event="focus" data-toggle="v-dropdown">
+                    <div class="cfx">
+                        <span class="_lab fl">硬度:</span>
+                        <div class="bfc">
+                            <input class="v-dropdown-btn" type="text" name="name" value="" placeholder="请下拉选择" autocomplete="off" />
+                            <span class="iconfont iconarow-b"></span>
+
+
+                        </div>
+                        <ul class="v-dropdown-menu ie8-border">
+                            <li><a href="javascript:;">高光泽性1</a></li>
+                            <li><a href="javascript:;">超高刚性2</a></li>
+                            <li><a href="javascript:;">特佳弯曲强</a></li>
+                            <li><a href="javascript:;">硬度4</a></li>
+                        </ul>
+
+                    </div>
+
+                </li>
+                <li class="_item v-dropdown" data-event="focus"  data-toggle="v-dropdown">
+                    <div class="cfx">
+                        <span class="_lab fl">流动性:</span>
+                        <div class="bfc">
+                            <input class="v-dropdown-btn" type="text" name="name" value="" placeholder="请下拉选择" autocomplete="off" />
+                            <span class="iconfont iconarow-b"></span>
+
+                        </div> 
+                        <ul class="v-dropdown-menu ie8-border">
+                            <li><a href="javascript:;">高光泽性1</a></li>
+                            <li><a href="javascript:;">超高刚性2</a></li>
+                            <li><a href="javascript:;">特佳弯曲强</a></li>
+                            <li><a href="javascript:;">硬度4</a></li>
+                        </ul>
+                    </div>
+
+                  
+                </li>
+                <li class="_item v-dropdown" data-event="focus"  data-toggle="v-dropdown">
+                    <div class="cfx ">
+                        <span class="_lab fl">热变形温度:</span>
+                        <div class="bfc">
+                            <input class="v-dropdown-btn" type="text" name="name" value="" placeholder="请下拉选择" autocomplete="off" />
+                            <span class="iconfont iconarow-b"></span>
+                        </div>
+                        <ul class="v-dropdown-menu ie8-border">
+                            <li><a href="javascript:;">高光泽性1</a></li>
+                            <li><a href="javascript:;">超高刚性2</a></li>
+                            <li><a href="javascript:;">特佳弯曲强</a></li>
+                            <li><a href="javascript:;">硬度4</a></li>
+                        </ul>
+
+                    </div>
+
+                  
+                </li>
+                <li class="_item v-dropdown" data-event="focus"  data-toggle="v-dropdown">
+                    <div class="cfx">
+                        <span class="_lab fl">拉伸:</span>
+                        <div class="bfc">
+                            <input class="v-dropdown-btn" type="text" name="name" value="" placeholder="请下拉选择" autocomplete="off" />
+                            <span class="iconfont iconarow-b"></span>
+                        </div>
+
+                        <ul class="v-dropdown-menu ie8-border">
+                            <li><a href="javascript:;">高光泽性1</a></li>
+                            <li><a href="javascript:;">超高刚性2</a></li>
+                            <li><a href="javascript:;">特佳弯曲强</a></li>
+                            <li><a href="javascript:;">硬度4</a></li>
+                        </ul>
+
+                    </div>
+
+                   
+                </li>
+                <li class="_item v-dropdown" data-event="focus"  data-toggle="v-dropdown">
+                    <div class="cfx">
+                        <span class="_lab fl">加工条件:</span>
+                        <div class="bfc">
+                            <input class="v-dropdown-btn" type="text" name="name" value="" placeholder="请下拉选择" autocomplete="off" />
+                            <span class="iconfont iconarow-b"></span>
+                        </div>
+                        <ul class="v-dropdown-menu ie8-border">
+                            <li><a href="javascript:;">高光泽性1</a></li>
+                            <li><a href="javascript:;">超高刚性2</a></li>
+                            <li><a href="javascript:;">特佳弯曲强</a></li>
+                            <li><a href="javascript:;">硬度4</a></li>
+                        </ul>
+
+                    </div>
+
+                </li>
+                <li class="_item v-dropdown" data-event="focus"  data-toggle="v-dropdown"> 
+                    <div class="cfx">
+                        <span class="_lab fl">产品用途:</span>
+                        <div class="bfc">
+                            <input class="v-dropdown-btn" type="text" name="name" value="" placeholder="请下拉选择" autocomplete="off" />
+                            <span class="iconfont iconarow-b"></span>
+                        </div>
+                        <ul class="v-dropdown-menu ie8-border">
+                            <li><a href="javascript:;">高光泽性1</a></li>
+                            <li><a href="javascript:;">超高刚性2</a></li>
+                            <li><a href="javascript:;">特佳弯曲强</a></li>
+                            <li><a href="javascript:;">硬度4</a></li>
+                        </ul>
+
+                    </div>
+
+                    
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- 查询列表 -->
+        <div class="matter-cnt-lst ctr ">
+
+            <a class="_item ie8-border cfx" href="./matter-dtl.html">
+                <div class="fr _p1">
+                    <span class="_btn1">透明</span>
+                    <span class="_btn2">注塑成型</span>
+                </div>
+                <h3 class=" _p2">
+                    <span class="_ttl1">ABS</span>
+                    <span class="_ttl2">台湾奇美</span>
+                    <span class="_ttl3">PA-757 </span>
+                </h3>
+
+                <!--产品特性-->
+                <ul class="_p3 cfx">
+
+                    <li>
+                        产品特性：
+                    </li>
+                    <li class="_txt">
+                        高光泽性
+                    </li>
+                    <li class="_txt">
+                        超高刚性
+                    </li>
+
+                    <li class="_txt">
+                        特佳弯曲强度
+                    </li>
+
+                </ul>
+                <!--产品用途-->
+                <ul class="_p4 cfx">
+                    <li>
+                        产品用途：
+                    </li>
+                    <li class="_txt">
+                        电话机外壳
+                    </li>
+                    <li class="_txt">
+                        灯座
+                    </li>
+
+                    <li class="_txt">
+                        玩具
+                    </li>
+                    <li class="_txt">
+                        办公室用品
+                    </li>
+                    <li class="_txt">
+                        时钟外壳
+                    </li>
+                    <li class="_txt">
+                        家电按钮
+                    </li>
+
+                </ul>
+
+                <div class="_p5 cfx">
+                    <div class="_lab fl">
+                        物性详情：
+                    </div>
+                    <ul class=" bfc">
+                        <li>ISO物质表</li>
+                        <li>标准物质表</li>
+                        <li>物质安全表</li>
+                        <li>加工建议条件</li>
+                        <li>原厂证书</li>
+                        <li>禁用物质书</li>
+
+                        <!--禁用-->
+                        <li class="dis">欧盟认证</li>
+                        <li class="dis">UL认证书</li>
+                    </ul>
+
+
+                </div>
+
+            </a>
+
+            <a class="_item ie8-border cfx" href="./matter-dtl.html">
+                <div class="fr _p1">
+                    <span class="_btn1">透明</span>
+                    <span class="_btn2">注塑成型</span>
+                </div>
+                <h3 class=" _p2">
+                    <span class="_ttl1">ABS</span>
+                    <span class="_ttl2">台湾奇美</span>
+                    <span class="_ttl3">PA-757 </span>
+                </h3>
+
+                <!--产品特性-->
+                <ul class="_p3 cfx">
+                    <li>
+                        产品特性：
+                    </li>
+                    <li class="_txt">
+                        高光泽性
+                    </li>
+                    <li class="_txt">
+                        超高刚性
+                    </li>
+
+                    <li class="_txt">
+                        特佳弯曲强度
+                    </li>
+
+                </ul>
+                <!--产品用途-->
+                <ul class="_p4 cfx">
+                    <li>
+                        产品用途：
+                    </li>
+                    <li class="_txt">
+                        电话机外壳
+                    </li>
+                    <li class="_txt">
+                        灯座
+                    </li>
+
+                    <li class="_txt">
+                        玩具
+                    </li>
+                    <li class="_txt">
+                        办公室用品
+                    </li>
+                    <li class="_txt">
+                        时钟外壳
+                    </li>
+                    <li class="_txt">
+                        家电按钮
+                    </li>
+
+                </ul>
+
+                <div class="_p5 cfx">
+                    <div class="_lab fl">
+                        物性详情：
+                    </div>
+                    <ul class=" bfc">
+                        <li>ISO物质表</li>
+                        <li>标准物质表</li>
+                        <li>物质安全表</li>
+                        <li>加工建议条件</li>
+                        <li>原厂证书</li>
+                        <li>禁用物质书</li>
+
+                        <!--禁用-->
+                        <li class="dis">欧盟认证</li>
+                        <li class="dis">UL认证书</li>
+                    </ul>
+
+
+                </div>
+
+            </a>
+
+            <a class="_item ie8-border cfx" href="./matter-dtl.html">
+                <div class="fr _p1">
+                    <span class="_btn1">透明</span>
+                    <span class="_btn2">注塑成型</span>
+                </div>
+                <h3 class=" _p2">
+                    <span class="_ttl1">ABS</span>
+                    <span class="_ttl2">台湾奇美</span>
+                    <span class="_ttl3">PA-757 </span>
+                </h3>
+
+                <!--产品特性-->
+                <ul class="_p3 cfx">
+                    <li>
+                        产品特性：
+                    </li>
+                    <li class="_txt">
+                        高光泽性
+                    </li>
+                    <li class="_txt">
+                        超高刚性
+                    </li>
+
+                    <li class="_txt">
+                        特佳弯曲强度
+                    </li>
+
+                </ul>
+                <!--产品用途-->
+                <ul class="_p4 cfx">
+                    <li>
+                        产品用途：
+                    </li>
+                    <li class="_txt">
+                        电话机外壳
+                    </li>
+                    <li class="_txt">
+                        灯座
+                    </li>
+
+                    <li class="_txt">
+                        玩具
+                    </li>
+                    <li class="_txt">
+                        办公室用品
+                    </li>
+                    <li class="_txt">
+                        时钟外壳
+                    </li>
+                    <li class="_txt">
+                        家电按钮
+                    </li>
+
+                </ul>
+
+                <div class="_p5 cfx">
+                    <div class="_lab fl">
+                        物性详情：
+                    </div>
+                    <ul class=" bfc">
+                        <li>ISO物质表</li>
+                        <li>标准物质表</li>
+                        <li>物质安全表</li>
+                        <li>加工建议条件</li>
+                        <li>原厂证书</li>
+                        <li>禁用物质书</li>
+
+                        <!--禁用-->
+                        <li class="dis">欧盟认证</li>
+                        <li class="dis">UL认证书</li>
+                    </ul>
+
+
+                </div>
+
+            </a>
+
+            <a class="_item ie8-border cfx" href="./matter-dtl.html">
+                <div class="fr _p1">
+                    <span class="_btn1">透明</span>
+                    <span class="_btn2">注塑成型</span>
+                </div>
+                <h3 class=" _p2">
+                    <span class="_ttl1">ABS</span>
+                    <span class="_ttl2">台湾奇美</span>
+                    <span class="_ttl3">PA-757 </span>
+                </h3>
+
+                <!--产品特性-->
+                <ul class="_p3 cfx">
+                    <li>
+                        产品特性：
+                    </li>
+                    <li class="_txt">
+                        高光泽性
+                    </li>
+                    <li class="_txt">
+                        超高刚性
+                    </li>
+
+                    <li class="_txt">
+                        特佳弯曲强度
+                    </li>
+
+                </ul>
+                <!--产品用途-->
+                <ul class="_p4 cfx">
+                    <li>
+                        产品用途：
+                    </li>
+                    <li class="_txt">
+                        电话机外壳
+                    </li>
+                    <li class="_txt">
+                        灯座
+                    </li>
+
+                    <li class="_txt">
+                        玩具
+                    </li>
+                    <li class="_txt">
+                        办公室用品
+                    </li>
+                    <li class="_txt">
+                        时钟外壳
+                    </li>
+                    <li class="_txt">
+                        家电按钮
+                    </li>
+
+                </ul>
+
+                <div class="_p5 cfx">
+                    <div class="_lab fl">
+                        物性详情：
+                    </div>
+                    <ul class=" bfc">
+                        <li>ISO物质表</li>
+                        <li>标准物质表</li>
+                        <li>物质安全表</li>
+                        <li>加工建议条件</li>
+                        <li>原厂证书</li>
+                        <li>禁用物质书</li>
+
+                        <!--禁用-->
+                        <li class="dis">欧盟认证</li>
+                        <li class="dis">UL认证书</li>
+                    </ul>
+
+
+                </div>
+
+            </a>
+
+            <a class="_item ie8-border cfx" href="./matter-dtl.html">
+                <div class="fr _p1">
+                    <span class="_btn1">透明</span>
+                    <span class="_btn2">注塑成型</span>
+                </div>
+                <h3 class=" _p2">
+                    <span class="_ttl1">ABS</span>
+                    <span class="_ttl2">台湾奇美</span>
+                    <span class="_ttl3">PA-757 </span>
+                </h3>
+
+                <!--产品特性-->
+                <ul class="_p3 cfx">
+                    <li>
+                        产品特性：
+                    </li>
+                    <li class="_txt">
+                        高光泽性
+                    </li>
+                    <li class="_txt">
+                        超高刚性
+                    </li>
+
+                    <li class="_txt">
+                        特佳弯曲强度
+                    </li>
+
+                </ul>
+                <!--产品用途-->
+                <ul class="_p4 cfx">
+                    <li>
+                        产品用途：
+                    </li>
+                    <li class="_txt">
+                        电话机外壳
+                    </li>
+                    <li class="_txt">
+                        灯座
+                    </li>
+
+                    <li class="_txt">
+                        玩具
+                    </li>
+                    <li class="_txt">
+                        办公室用品
+                    </li>
+                    <li class="_txt">
+                        时钟外壳
+                    </li>
+                    <li class="_txt">
+                        家电按钮
+                    </li>
+
+                </ul>
+
+                <div class="_p5 cfx">
+                    <div class="_lab fl">
+                        物性详情：
+                    </div>
+                    <ul class=" bfc">
+                        <li>ISO物质表</li>
+                        <li>标准物质表</li>
+                        <li>物质安全表</li>
+                        <li>加工建议条件</li>
+                        <li>原厂证书</li>
+                        <li>禁用物质书</li>
+
+                        <!--禁用-->
+                        <li class="dis">欧盟认证</li>
+                        <li class="dis">UL认证书</li>
+                    </ul>
+
+
+                </div>
+
+            </a>
+
+            <a class="_item ie8-border cfx" href="./matter-dtl.html">
+                <div class="fr _p1">
+                    <span class="_btn1">透明</span>
+                    <span class="_btn2">注塑成型</span>
+                </div>
+                <h3 class=" _p2">
+                    <span class="_ttl1">ABS</span>
+                    <span class="_ttl2">台湾奇美</span>
+                    <span class="_ttl3">PA-757 </span>
+                </h3>
+
+                <!--产品特性-->
+                <ul class="_p3 cfx">
+                    <li>
+                        产品特性：
+                    </li>
+                    <li class="_txt">
+                        高光泽性
+                    </li>
+                    <li class="_txt">
+                        超高刚性
+                    </li>
+
+                    <li class="_txt">
+                        特佳弯曲强度
+                    </li>
+
+                </ul>
+                <!--产品用途-->
+                <ul class="_p4 cfx">
+                    <li>
+                        产品用途：
+                    </li>
+                    <li class="_txt">
+                        电话机外壳
+                    </li>
+                    <li class="_txt">
+                        灯座
+                    </li>
+
+                    <li class="_txt">
+                        玩具
+                    </li>
+                    <li class="_txt">
+                        办公室用品
+                    </li>
+                    <li class="_txt">
+                        时钟外壳
+                    </li>
+                    <li class="_txt">
+                        家电按钮
+                    </li>
+
+                </ul>
+
+                <div class="_p5 cfx">
+                    <div class="_lab fl">
+                        物性详情：
+                    </div>
+                    <ul class=" bfc">
+                        <li>ISO物质表</li>
+                        <li>标准物质表</li>
+                        <li>物质安全表</li>
+                        <li>加工建议条件</li>
+                        <li>原厂证书</li>
+                        <li>禁用物质书</li>
+
+                        <!--禁用-->
+                        <li class="dis">欧盟认证</li>
+                        <li class="dis">UL认证书</li>
+                    </ul>
+
+
+                </div>
+
+            </a>
+
+            <a class="_item ie8-border cfx" href="./matter-dtl.html">
+                <div class="fr _p1">
+                    <span class="_btn1">透明</span>
+                    <span class="_btn2">注塑成型</span>
+                </div>
+                <h3 class=" _p2">
+                    <span class="_ttl1">ABS</span>
+                    <span class="_ttl2">台湾奇美</span>
+                    <span class="_ttl3">PA-757 </span>
+                </h3>
+
+                <!--产品特性-->
+                <ul class="_p3 cfx">
+                    <li>
+                        产品特性：
+                    </li>
+                    <li class="_txt">
+                        高光泽性
+                    </li>
+                    <li class="_txt">
+                        超高刚性
+                    </li>
+
+                    <li class="_txt">
+                        特佳弯曲强度
+                    </li>
+
+                </ul>
+                <!--产品用途-->
+                <ul class="_p4 cfx">
+                    <li>
+                        产品用途：
+                    </li>
+                    <li class="_txt">
+                        电话机外壳
+                    </li>
+                    <li class="_txt">
+                        灯座
+                    </li>
+
+                    <li class="_txt">
+                        玩具
+                    </li>
+                    <li class="_txt">
+                        办公室用品
+                    </li>
+                    <li class="_txt">
+                        时钟外壳
+                    </li>
+                    <li class="_txt">
+                        家电按钮
+                    </li>
+
+                </ul>
+
+                <div class="_p5 cfx">
+                    <div class="_lab fl">
+                        物性详情：
+                    </div>
+                    <ul class=" bfc">
+                        <li>ISO物质表</li>
+                        <li>标准物质表</li>
+                        <li>物质安全表</li>
+                        <li>加工建议条件</li>
+                        <li>原厂证书</li>
+                        <li>禁用物质书</li>
+
+                        <!--禁用-->
+                        <li class="dis">欧盟认证</li>
+                        <li class="dis">UL认证书</li>
+                    </ul>
+
+
+                </div>
+
+            </a>
+
+            <a class="_item ie8-border cfx" href="./matter-dtl.html">
+                <div class="fr _p1">
+                    <span class="_btn1">透明</span>
+                    <span class="_btn2">注塑成型</span>
+                </div>
+                <h3 class=" _p2">
+                    <span class="_ttl1">ABS</span>
+                    <span class="_ttl2">台湾奇美</span>
+                    <span class="_ttl3">PA-757 </span>
+                </h3>
+
+                <!--产品特性-->
+                <ul class="_p3 cfx">
+                    <li>
+                        产品特性：
+                    </li>
+                    <li class="_txt">
+                        高光泽性
+                    </li>
+                    <li class="_txt">
+                        超高刚性
+                    </li>
+
+                    <li class="_txt">
+                        特佳弯曲强度
+                    </li>
+
+                </ul>
+                <!--产品用途-->
+                <ul class="_p4 cfx">
+                    <li>
+                        产品用途：
+                    </li>
+                    <li class="_txt">
+                        电话机外壳
+                    </li>
+                    <li class="_txt">
+                        灯座
+                    </li>
+
+                    <li class="_txt">
+                        玩具
+                    </li>
+                    <li class="_txt">
+                        办公室用品
+                    </li>
+                    <li class="_txt">
+                        时钟外壳
+                    </li>
+                    <li class="_txt">
+                        家电按钮
+                    </li>
+
+                </ul>
+
+                <div class="_p5 cfx">
+                    <div class="_lab fl">
+                        物性详情：
+                    </div>
+                    <ul class=" bfc">
+                        <li>ISO物质表</li>
+                        <li>标准物质表</li>
+                        <li>物质安全表</li>
+                        <li>加工建议条件</li>
+                        <li>原厂证书</li>
+                        <li>禁用物质书</li>
+
+                        <!--禁用-->
+                        <li class="dis">欧盟认证</li>
+                        <li class="dis">UL认证书</li>
+                    </ul>
+
+
+                </div>
+
+            </a>
+
+
+        </div>
+
+        <!-- 分页-->
+        <div class="matter-cnt-paging">
+            <div class="paging text-center"> </div>
+        </div>
+       
+
+    </section>
+
+    <!--icon-->
+    <include src="../../template/_icon.html"></include>
+
+    <!--footer-->
+    <include src="../../template/_footer.html"></include>
+
+    <!--置顶-->
+    <div class="zhiding self">
+        <img src="../../static/images/index/zhiding.png" alt="置顶" title="到页面顶部" />
+        <!--<span class="iconicon-test iconfont"></span>-->
+    </div>
+
+
+</body>
+
+</html>

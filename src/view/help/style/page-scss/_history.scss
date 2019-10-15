@@ -1,0 +1,128 @@
+
+@import "../var.scss";
+.history-content {
+
+
+    .help-content {
+        position: relative;
+
+        .history-title {
+            width: 995px;
+            height: 119px;
+            text-align: center;
+           // background-image: url("/static/images/help/bzzx-you-fzlc.png");
+            font-weight: bold;
+
+            .title-l {
+                font-size: 32px;
+                color: #1e2128;
+                line-height: 65px;
+            }
+
+            .title-s {
+                font-size: 16px;
+                color: #1e2128;
+            }
+        }
+
+        .content {
+            margin-bottom: 275px;
+
+            .iconfont {
+                vertical-align: middle;
+                font-size: 20px;
+                color: #003399;
+                background-color: #fff;
+            }
+
+            .line {
+                display: inline-block;
+                width: 51px;
+                margin: 0 9px;
+                border-top: 2px dashed #bfbfbf;
+                vertical-align: middle;
+            }
+
+            .date {
+                display: inline-block;
+                vertical-align: top;
+                font-size: 20px;
+                color: #1e2128;
+
+                .event {
+                    font-size: 16px;
+                    color: #5b5e6a;
+                }
+
+            }
+
+
+
+            .content-l {
+                float: left;
+                width: 50%;
+                height: 100%;
+                position: relative;
+                z-index: 1;
+
+                li {
+                    margin-right: -11px;
+
+                    .date {
+                        width: 410px;
+                        text-align: right;
+                    }
+                }
+            }
+
+            .content-r {
+                float: left;
+                border-left: 2px solid #bfbfbf;
+
+                li {
+                    margin-left: -11px;
+                }
+            }
+
+            .fs {
+                margin-top: 38px;
+            }
+
+            .yy {
+                margin-top: 134px;
+            }
+
+            .ly {
+                margin-top: 117px;
+            }
+
+            .hz {
+                margin-top: 169px;
+            }
+
+            .dg {
+                margin-top: 229px;
+            }
+
+            .year {
+                position: absolute;
+                left: 50%;
+                margin-left: -47px;
+            }
+
+            .img-17 {
+                top: 660px;
+            }
+
+            .img-18 {
+                top: 528px;
+            }
+
+            .img-19 {
+                top: 406px;
+            }
+        }
+    }
+}
+
+

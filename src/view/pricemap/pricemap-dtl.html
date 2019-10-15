@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>价格走势图</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="Keywords" content="塑金比价系统" />
+    <meta name="Description" content="塑金比价系统" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/cstFonts/index/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/view/pricemap.css" />
+
+    <!--[if lte IE 8]>
+        <script src="../../static/js/html5shiv.js"  type="text/javascript" charset="utf-8"></script>
+         <link rel="stylesheet" type="text/css" href="../../static/css/ie8.css" />
+    <![endif]-->
+    <!--check css-->
+    <script src="../../static/js/modernizr-2.6.2.min.js" defer type="text/javascript" charset="utf-8"></script>
+    <!--css3 prefix-->
+    <script src="../../static/js/prefix-css3.min.js" defer type="text/javascript" charset="utf-8"></script>
+    <script src="../../static/js/common-cdn.js" defer type="text/javascript" charset="utf-8"></script>
+
+    <!--[if lte IE 9]>
+         <script src="../../static/js/placeholder.js" defer type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+    <!--走势图 js-->
+    <script src="../../static/js/highchart/highcharts.js" defer></script>
+    <script src="../../static/js/highchart/series-label.js" defer></script>
+    <script src="../../static/js/highchart/exporting.js" defer></script>
+    <script src="../../static/js/highchart/export-data.js" defer></script>
+
+    <!--[if lte IE 8]>
+    <script src="../../static/js/highchart/ie8/oldie-polyfills.js" defer></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <script src="../../static/js/highchart/ie8/oldie.js" defer></script>
+    <![endif]-->
+
+    <script data-parent="umd" data-umd="pricemapDtl" defer src="../../static/js/view/pricemap.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body class="pricemap-dtl" >
+
+    <!--header-->
+    <header class="pricemap-dtl-hd ">
+
+        <div class="ctr">
+            <!-- 右边登录和注册-->
+            <div class="fr">
+
+                <!-- 未登录-->
+                <div class="index-hd-nav-r d-hide">
+                    <a href="../login/register.html">注册</a>
+                    <span class="_line"></span>
+                    <a href="../login"> 登录</a>
+                </div>
+
+                <!--已登录-->
+                <div class="_online">
+                    <img src="../../static/images/index/head.png" alt="用户头像" />
+                    <span>塑料张贺</span>
+                </div>
+            </div>
+
+            <!--左边logo-->
+            <h1 class="_login">
+                <a href="../index/">
+                    <img src="../../static/images/index/logo.png" alt="home logo" />
+                    <span>
+                        塑金在线
+                        www.sujin1688.com
+                    </span>
+
+                </a>
+            </h1>
+
+        </div>
+
+
+    </header>
+
+    <!--content-->
+    <section class="pricemap-dtl-cnt">
+
+        <!-- 走势图-->
+        <div class="pricemap-dtl-map ctr ie8-border">
+
+            <h2>价格走势图</h2>
+
+            <div class="cfx">
+                <div class="_btns v-radiobtn-group">
+                    <a class=" v-radiobtn-item active" href="#">近一周</a>
+                    <a class=" v-radiobtn-item" href="#">近一月</a>
+                    <a class=" v-radiobtn-item" href="#">近一年</a>
+                </div>
+            </div>
+
+            <!--走势图-->
+            <div class="_map" id="map">
+
+
+            </div>
+
+        </div>
+
+        <!--相关新闻-->
+        <div class="pricemap-dtl-news ctr cfx ie8-border">
+
+            <p>
+                相关新闻
+            </p>
+
+            <div class="_imgs  fl">
+                <a href="#">
+                    <img src="../../static/images/index/pricemap/sjdb-xgxw-banner01.jpg" alt="相关新闻 图片" />
+                    <p class="elp">
+                        <span>行业新闻</span>
+                        兰州石化PP老装置停车中老装置停车中老装置停车中老装置停车中老装置停车中
+                    </p>
+                </a>
+
+            </div>
+
+            <div class="_list  bfc">
+
+                <div class="_item">
+                    <h3 class="elp">
+                        <span>注塑工艺</span>
+                        <span class="_time">12-4</span>
+                        PP粉料生产厂商装置动态和最新参考报价PP粉料生产厂商装置动态和最新参考报价PP粉料生产厂商装置动态和最新参考报价PP粉料生产厂商装置动态和最新参考报价
+                    </h3>
+                    <p class="elp-2">
+                        “东莞智造”领域即将迎来又一场行业盛事！2019广东国际机器人及智能装备博览会暨第二十一届DMP东莞国际模具、金属加工、塑胶及包装展、
+                        广东国际机器人整     广东国际机器人整     广东国际机器人整     广东国际机器人整
+
+
+                    </p>
+                    <div class="_btns">
+                        <span>余姚</span>
+                        <span>PP</span>
+                    </div>
+                </div>
+
+                <div class="_item">
+                    <h3 class="elp">
+                        <span>注塑工艺</span>
+                        <span class="_time">12-4</span>
+                        PP粉料生产厂商装置动态和最新参考报价PP粉料生产厂商装置动态和最新参考报价PP粉料生产厂商装置动态和最新参考报价PP粉料生产厂商装置动态和最新参考报价
+                    </h3>
+                    <p class="elp-2">
+                        “东莞智造”领域即将迎来又一场行业盛事！2019广东国际机器人及智能装备博览会暨第二十一届DMP东莞国际模具、金属加工、塑胶及包装展、
+                        广东国际机器人整     广东国际机器人整     广东国际机器人整     广东国际机器人整
+
+
+                    </p>
+                    <div class="_btns">
+                        <span>余姚</span>
+                        <span>PP</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--icon-->
+    <include src="../../template/_icon.html"></include>
+
+    <!--footer-->
+    <include src="../../template/_footer.html"></include>
+
+    <!--置顶-->
+    <div class="zhiding self">
+        <img src="../../static/images/index/zhiding.png" alt="置顶" title="到页面顶部" />
+        <!--<span class="iconicon-test iconfont"></span>-->
+    </div>
+    <script>
+
+              // 走势图
+        window.onload = function () {
+
+            Highcharts.setOptions({
+                lang: {
+                    contextButtonTitle: "图表导出菜单",
+                    decimalPoint: ".",
+                    downloadJPEG: "下载JPEG图片",
+                    downloadPDF: "下载PDF文件",
+                    downloadPNG: "下载PNG文件",
+                    downloadSVG: "下载SVG文件",
+                    drillUpText: "返回 {series.name}",
+                    loading: "加载中",
+                    months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+                    noData: "没有数据",
+                    numericSymbols: ["千", "兆", "G", "T", "P", "E"],
+                    printChart: "打印图表",
+                    resetZoom: "恢复缩放",
+                    resetZoomTitle: "恢复图表",
+                    shortMonths: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                    thousandsSep: ",",
+                    weekdays: ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期天"]
+                }
+
+
+            });
+
+            Highcharts.chart('map', {
+
+                title: {
+                    text: ' PP | 中石化湛江东兴 | PPH-T03',
+                    style: { "color": "#111", "fontSize": "18px", "fontWeight": "bold" }
+                },
+                colors: [ 'red', 'blue','green', 'orangered', '#7d1659', '#f15c80', '#e4d354', '#2b908f', '#f45b5b', '#91e8e1'], //默认颜色数组
+                credits: {
+                    enabled: false, //版权信息
+                },
+                style: {
+                    left: '100px',
+                    top: '100px',
+                    color: 'red',
+                    fontSize: '20px',
+                    fontWeight: 'bold',
+                    fontFamily: '微软雅黑'
+                },
+
+                subtitle: {
+                    //  text: '数据来源 http://www.sujin1688.com/'
+                },
+
+                yAxis: {
+                    title: {
+                        text: ""// '单位（元/吨）'
+                    }, labels: {
+                        formatter: function () {
+                            return (this.value).toFixed(0) + " (元/吨)"
+                        },
+                        style: { "color": "#444", "cursor": "default", "fontSize": "12px" }
+                    },
+
+                },
+                xAxis: {
+                    categories: ['5月1号', '5月2号', '5月3号', '5月4号', '5月5号', '5月6号', '5月7号', '5月8号', '5月9号', '5月10号'],
+                    //crosshair: {
+                    //    width: 1,
+                    //    color: '#999',
+                    //    dashStyle:"ShortDot"
+                    //}
+                    labels: {
+                        style: { "color": "#444", "cursor": "default", "fontSize": "12px" }
+                    }
+
+                },
+
+                legend: {
+                    layout: 'horizontal', //horizontal  vertical
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    padding: 3,
+                    itemMarginTop: 20,
+                    itemMarginBottom: 5,
+                    itemStyle: {
+                        lineHeight: '20px',
+                        fontSize: "14px"
+                    }
+
+                },
+                noData: {
+                    style: {
+                        fontWeight: 'bold',
+                        fontSize: '15px',
+                        color: '#303030'
+                    }
+                },
+
+                plotOptions: {
+                    series: {
+                        label: {
+                            connectorAllowed: false
+                        },
+                        //pointStart: 2019
+                    }
+                },
+
+               
+					series: [{
+						name: '东莞',
+						data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+					}],
+
+                responsive: {
+                    rules: [{
+                          condition: {
+								maxWidth: 500
+							},
+                        chartOptions: {
+                            legend: {
+                                layout: 'horizontal',
+                                align: 'center',
+                                verticalAlign: 'bottom'
+                            }
+                        }
+                    }]
+                }
+
+            });
+        };
+
+    </script>
+
+</body>
+
+</html>

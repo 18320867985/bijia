@@ -1,0 +1,88 @@
+/*head*/
+@import "../var.scss";
+.common-head {
+    height: 32px;
+    background-color: #f2f2f2;
+    line-height: 32px;
+
+    .common-head-l {
+        left: 0;
+    }
+
+    .common-head-r {
+        right: 0;
+    }
+
+    a {
+        color: $text-main;
+    }
+
+    img {
+        margin-right: 4px;
+        vertical-align: middle;
+    }
+
+    span {
+        vertical-align: middle;
+    }
+}
+.logo-wrap {
+    height: 144px;
+    background-image: url("../../images/member/hyzx-pt.jpg");
+}
+.logo {
+    position: relative;
+    padding-top: 30px;
+
+    .logo-img {
+        margin-right: 30px;
+        vertical-align: middle;
+    }
+
+    .logo-txt {
+        font-size: 24px;
+        color: $text-tit;
+    }
+
+    .portrait-top {
+        float: right;
+
+        img {
+            vertical-align: middle;
+        }
+
+        span {
+            vertical-align: middle;
+            font-size: 16px;
+            color: $text-white;
+            margin-left: 10px;
+        }
+    }
+
+    ul {
+        position: absolute;
+        right: 10px;
+        top: 70px;
+        z-index: 2;
+        width: 103px;
+        height: 118px;
+        padding: 15px 0;
+        border-radius:5px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.14);
+        text-align: center;
+
+
+
+
+        a {
+            line-height: 45px;
+            color: $text-main;
+            font-size: 16px;
+
+            &:hover {
+                color: $bg-active;
+            }
+        }
+    }
+}

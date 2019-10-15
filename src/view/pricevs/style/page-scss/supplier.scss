@@ -1,0 +1,197 @@
+
+@import "../var.scss";
+
+.supplier {
+    .pricelist-cnt-tb {
+        margin-bottom: 0px;
+    }
+
+    .pricevs-cnt-dy {
+        margin-bottom: 60px;
+
+        ._l, ._r {
+            background: #fff;
+        }
+        //left
+        ._l {
+            width: 778px;
+            box-shadow: 0px 0px 12px 0px rgba(57, 57, 57, 0.14);
+            border: 1px solid $line;
+        }
+
+        ._l-tb {
+            .__item1 {
+                width: 15%;
+            }
+
+            .__item2 {
+                width: 15%;
+            }
+
+            .__item3 {
+                width: 15%;
+            }
+
+            .__item4 {
+                width: 10%;
+            }
+
+            .__item5 {
+                width: 15%;
+            }
+
+            .__item6 {
+                width: 15%;
+            }
+
+            .__item7 {
+                width: 15%;
+            }
+
+            .tb-cell {
+                text-align: center;
+                vertical-align: middle;
+                word-break: break-all;
+                word-wrap: break-word;
+            }
+        }
+
+        ._l-tb-ttl {
+            width: 100%;
+            vertical-align: middle;
+            border-bottom: 1px solid $line;
+
+            > div {
+                line-height: 62px;
+                background: $pricevs-ttl-bg;
+                text-align: center;
+                font-size: 16px;
+                color: $pricevs-ttl-color;
+            }
+        }
+
+        ._l-tb-bd {
+            width: 100%;
+
+            .tb-cell {
+                padding: 15px 10px;
+            }
+
+            .__item {
+                border-bottom: 1px solid $line;
+
+                &:hover {
+                    background: $bg-hover;
+                }
+            }
+
+            .__item1 {
+                font-family: DIN-Bold;
+                font-size: 14px;
+                font-weight: normal;
+                letter-spacing: 0px;
+                color: $pricevs-danger;
+            }
+
+            .__item4 {
+                color: inherit;
+            }
+
+            .__btn1 {
+                padding: 2px 6px;
+                border-radius: 4px;
+                border: solid 1px #ff0000;
+                background: #fff;
+                color: $pricevs-danger;
+                font-size: 14px;
+                font-weight: bold;
+                transition: all .5s;
+                box-shadow: 0 0 20px #fff;
+
+                .iconfont {
+                    margin-right: 3px;
+                    line-height: 1;
+                    vertical-align: -1px;
+                    font-size: 18px
+                }
+
+                &:hover {
+                    color: #fff;
+                    background: darken($pricevs-danger,5%);
+                }
+            }
+        }
+
+        ._r {
+        }
+
+        ._r-dt {
+            padding: 0;
+            box-shadow: none;
+            border: none;
+
+            a {
+                display: block;
+                width: 100%;
+                overflow: hidden;
+
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+                transition: all .5s;
+            }
+        }
+
+        ._b-l-lst {
+            padding-bottom: 20px;
+            padding: 0 10px 10px 10px;
+
+            .tb {
+                width: 100%;
+                padding: 8px 10px;
+                border-radius: 5px;
+
+                .tb-cell:first-child {
+                    font-weight: bold;
+                }
+
+                & + .tb {
+                    border-top: 1px solid $line;
+                }
+
+                &:hover {
+                    background: $bg-hover;
+                }
+            }
+
+            .__btn {
+                display: inline-block;
+                padding: 5px 10px;
+                font-size: 12px;
+                line-height: 1;
+                border: 1px solid $bg-active;
+                color: $bg-active;
+                border-radius: 5px;
+                transition: all .5s;
+                cursor: pointer;
+
+                &:hover {
+                    background: $bg-active;
+                    color: #fff;
+                }
+            }
+
+            .tb-cell {
+            }
+        }
+    }
+
+
+    
+}

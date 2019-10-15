@@ -1,0 +1,87 @@
+
+@import "../var.scss";
+.edit {
+    .content {
+        padding: 0 36px;
+
+        .infor {
+            display: inline-block;
+            width: 95px;
+            margin-right: 20px;
+            font-size: 14px;
+            color: $text-main;
+            text-align: right;
+            vertical-align: middle;
+
+            .icon {
+                font-size: 16px;
+                color: $text-special;
+            }
+        }
+
+        li {
+            margin: 30px 0;
+
+            input {
+                width: 480px;
+                height: 44px;
+                background-color: #f0f3f5;
+                border: none;
+                color: $text-tit;
+                font-size: 14px;
+                /*padding-left: 20px;*/
+                padding: 12px 20px;
+
+                &.location {
+                    width: 190px;
+                    height: 44px;
+                    vertical-align: middle;
+                }
+            }
+
+            .icon-arrows {
+                position: relative;
+                right: 35px;
+                cursor: pointer;
+                vertical-align: middle;
+            }
+        }
+
+
+
+
+        a {
+            display: inline-block;
+            width: 190px;
+            height: 44px;
+            line-height: 44px;
+            border-radius: 4px;
+            border: solid 1px $text-main;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .back {
+            background-color: $text-white;
+            color: $text-main;
+            margin: 30px 30px 30px 119px;
+
+            &:hover {
+                background-color: darken($text-white,10%);
+                color: darken($text-main,10%);
+            }
+        }
+
+        .submit {
+            background-color: $bg-active;
+            color: $text-white;
+
+            &:hover {
+                background-color: darken($bg-active,10%);
+                color: darken($text-white,10%);
+            }
+        }
+    }
+}

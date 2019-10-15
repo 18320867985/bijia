@@ -1,0 +1,75 @@
+
+@import "../var.scss";
+.collect {
+    .content {
+        text-align: center;
+        padding-bottom:15px;
+
+
+        tr {
+            background-color: $text-white;
+           // box-shadow: 0px 1px 0px 0px #f2f2f2;
+
+             td{
+                 overflow:hidden;
+                 text-overflow:ellipsis;
+                 white-space:nowrap;
+             }
+
+             &+tr{
+                  border-top: 1px solid $line;
+             }
+            &:hover {
+                background-color: #f1f1f1;
+            }
+
+            .price {
+                font-size: 15px;
+                color: $text-special;
+                font-weight: bold;
+            }
+
+            button {
+                width: 46px;
+                height: 24px;
+                font-size: 12px;
+                background-color: $bg-white;
+                transition: all 300ms;
+
+                &.see {
+                    border: solid 1px $bg-active;
+                    color: $bg-active;
+                    margin-right: 30px;
+
+                    &:hover {
+                        color: $text-white;
+                        background-color: $bg-active;
+                    }
+                }
+
+                &.del {
+                    border: solid 1px #3dac2c;
+                    color: #3dac2c;
+
+                    &:hover {
+                        color: $text-white;
+                        background-color: #3dac2c;
+                    }
+                }
+            }
+        }
+
+        th {
+            height: 62px;
+            font-size: 16px;
+            color: $text-tit;
+            background-color: #f5f8fa;
+        }
+
+        td {
+            height: 44px;
+            font-size: 14px;
+            color: $text-main;
+        }
+    }
+}

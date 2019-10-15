@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>价格走势图</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="Keywords" content="塑金比价系统" />
+    <meta name="Description" content="塑金比价系统" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/cstFonts/index/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/view/pricemap.css" />
+
+    <!--[if lte IE 8]>
+        <script src="../../static/js/html5shiv.js"  type="text/javascript" charset="utf-8"></script>
+         <link rel="stylesheet" type="text/css" href="../../static/css/ie8.css" />
+    <![endif]-->
+    <!--check css-->
+    <script src="../../static/js/modernizr-2.6.2.min.js" defer type="text/javascript" charset="utf-8"></script>
+    <!--css3 prefix-->
+    <script src="../../static/js/prefix-css3.min.js" defer type="text/javascript" charset="utf-8"></script>
+    <script src="../../static/js/common-cdn.js" defer type="text/javascript" charset="utf-8"></script>
+
+    <!--[if lte IE 9]>
+         <script src="../../static/js/placeholder.js" defer type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+    <!--走势图 js-->
+    <script src="../../static/js/highchart/highcharts.js" defer></script>
+    <script src="../../static/js/highchart/series-label.js" defer></script>
+    <script src="../../static/js/highchart/exporting.js" defer></script>
+    <script src="../../static/js/highchart/export-data.js" defer></script>
+
+    <!--[if lte IE 8]>
+    <script src="../../static/js/highchart/ie8/oldie-polyfills.js" defer></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <script src="../../static/js/highchart/ie8/oldie.js" defer></script>
+    <![endif]-->
+
+    <script data-parent="umd" data-umd="pricemapDtl" defer src="../../static/js/view/pricemap.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body class="pricemap-dtl">
+
+    <!--header-->
+    <header class="pricemap-dtl-hd ">
+
+        <div class="ctr">
+            <!-- 右边登录和注册-->
+            <div class="fr">
+
+                <!-- 未登录-->
+                <div class="index-hd-nav-r d-hide">
+                    <a href="../login/register.html">注册</a>
+                    <span class="_line"></span>
+                    <a href="../login"> 登录</a>
+                </div>
+
+                <!--已登录-->
+                <div class="_online">
+                    <img src="../../static/images/index/head.png" alt="用户头像" />
+                    <span>塑料张贺</span>
+                </div>
+            </div>
+
+            <!--左边logo-->
+            <h1 class="_login">
+                <a href="../index/">
+                    <img src="../../static/images/index/logo.png" alt="home logo" />
+                    <span>
+                        塑金在线
+                        www.sujin1688.com
+                    </span>
+
+                </a>
+            </h1>
+
+        </div>
+
+
+    </header>
+
+    <!--content-->
+    <section class="pricemap-dtl-cnt">
+
+        <!-- 走势图-->
+        <div class="pricemap-dtl-map ctr ie8-border">
+
+            <h2>价格走势图</h2>
+
+            <div class="cfx">
+                <div class="_btns v-radiobtn-group">
+                    <a class=" v-radiobtn-item active" href="#">近一周</a>
+                    <a class=" v-radiobtn-item" href="#">近一月</a>
+                    <a class=" v-radiobtn-item" href="#">近一年</a>
+                </div>
+            </div>
+
+            <!--走势图-->
+            <div class="_map" id="map">
+
+
+            </div>
+
+        </div>
+
+        <!--相关新闻-->
+        <div class="pricemap-dtl-news ctr cfx ie8-border">
+
+            <p>
+                相关新闻
+            </p>
+
+            <div class="_imgs  fl">
+                <a href="#">
+                    <img src="../../static/images/index/pricemap/sjdb-xgxw-banner01.jpg" alt="相关新闻 图片" />
+                    <p class="elp">
+                        <span>行业新闻</span>
+                        兰州石化PP老装置停车中老装置停车中老装置停车中老装置停车中老装置停车中
+                    </p>
+                </a>
+
+            </div>
+
+            <div class="_list  bfc">
+
+                <div class="_item">
+                    <h3 class="elp">
+                        <span>注塑工艺</span>
+                        <span class="_time">12-4</span>
+                        PP粉料生产厂商装置动态和最新参考报价PP粉料生产厂商装置动态和最新参考报价PP粉料生产厂商装置动态和最新参考报价PP粉料生产厂商装置动态和最新参考报价
+                    </h3>
+                    <p class="elp-2">
+                        “东莞智造”领域即将迎来又一场行业盛事！2019广东国际机器人及智能装备博览会暨第二十一届DMP东莞国际模具、金属加工、塑胶及包装展、
+                        广东国际机器人整     广东国际机器人整     广东国际机器人整     广东国际机器人整
+
+
+                    </p>
+                    <div class="_btns">
+                        <span>余姚</span>
+                        <span>PP</span>
+                    </div>
+                </div>
+
+                <div class="_item">
+                    <h3 class="elp">
+                        <span>注塑工艺</span>
+                        <span class="_time">12-4</span>
+                        PP粉料生产厂商装置动态和最新参考报价PP粉料生产厂商装置动态和最新参考报价PP粉料生产厂商装置动态和最新参考报价PP粉料生产厂商装置动态和最新参考报价
+                    </h3>
+                    <p class="elp-2">
+                        “东莞智造”领域即将迎来又一场行业盛事！2019广东国际机器人及智能装备博览会暨第二十一届DMP东莞国际模具、金属加工、塑胶及包装展、
+                        广东国际机器人整     广东国际机器人整     广东国际机器人整     广东国际机器人整
+
+
+                    </p>
+                    <div class="_btns">
+                        <span>余姚</span>
+                        <span>PP</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--icon-->
+    <include src="../../template/_icon.html"></include>
+
+    <!--footer-->
+    <include src="../../template/_footer.html"></include>
+
+    <!--置顶-->
+    <div class="zhiding self">
+        <img src="../../static/images/index/zhiding.png" alt="置顶" title="到页面顶部" />
+        <!--<span class="iconicon-test iconfont"></span>-->
+    </div>
+
+
+    <script>
+
+        // 走势图
+        window.onload = function () {
+
+
+            Highcharts.chart('map', {
+                chart: {
+                    type: 'spline'
+                },
+
+                subtitle: {
+                    text: ''
+                },
+                title: {
+                    text: ' PP | 中石化湛江东兴 | PPH-T03',
+                    style: { "color": "#111", "fontSize": "18px", "fontWeight": "bold" }
+                },
+                colors: ['red', 'blue', 'green', 'orangered', '#7d1659', '#f15c80', '#e4d354', '#2b908f', '#f45b5b', '#91e8e1'], //默认颜色数组
+                //colors: ['#6CF', '#39F', '#06C', '#036', '#000'],
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: { // don't display the dummy year
+                        month: '%e. %b',
+                        // year: '%b'
+                    },
+                    title: {
+                        text: ''
+                    }
+                },
+                yAxis: {
+                    //title: {
+                    //    text: 'Snow depth (m)'
+                    //},
+                    title: {
+                        text: ""// '单位（元/吨）'
+                    }, labels: {
+                        formatter: function () {
+                            return (this.value) + " (元/吨)"
+                        },
+                        style: { "color": "#444", "cursor": "default", "fontSize": "12px" }
+                    },
+                    min: 0
+                },
+                tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '{point.x:%b %e }号/{point.y:.2f}(元/吨)'
+                },
+
+                plotOptions: {
+                    series: {
+                        marker: {
+                            enabled: true
+                        }
+                    }
+                },
+
+
+
+                // Define the data points. All series have a dummy year
+                // of 1970/71 in order to be compared on the same x axis. Note
+                // that in JavaScript, months start at 0 for January, 1 for February etc.
+                series: [
+
+                    {
+                        name: "余姚",
+                        data: [
+                            [Date.UTC(2019, 10, 1), 2000],
+                            [Date.UTC(2019, 10, 2), 2700],
+                            [Date.UTC(2019, 10, 3), 1070],
+                            [Date.UTC(2019, 10, 5), 2400],
+                            [Date.UTC(2019, 10, 6), 2800],
+                            [Date.UTC(2019, 10, 7), 1000],
+                            [Date.UTC(2019, 10, 8), 2600],
+                            [Date.UTC(2019, 10, 13), 1000],
+                            [Date.UTC(2019, 10, 14), 2000],
+                            [Date.UTC(2019, 10, 15), 1000],
+                            [Date.UTC(2019, 10, 16), 2000],
+                            [Date.UTC(2019, 10, 17), 3000],
+                            [Date.UTC(2019, 10, 18), 4700],
+                            [Date.UTC(2019, 10, 19), 1060],
+                            [Date.UTC(2019, 10, 20), 3000],
+                            [Date.UTC(2019, 10, 21), 1000],
+                            [Date.UTC(2019, 10, 24), 1700],
+                            [Date.UTC(2019, 10, 30), 4200]
+                        ]
+                    },
+
+                    {
+                        name: "东莞",
+                        data: [
+                            [Date.UTC(2019, 10, 1), 1000],
+                            [Date.UTC(2019, 10, 2), 2000],
+                            [Date.UTC(2019, 10, 3), 1000],
+                            [Date.UTC(2019, 10, 5), 2000],
+                            [Date.UTC(2019, 10, 6), 2000],
+                            [Date.UTC(2019, 10, 7), 1000],
+                            [Date.UTC(2019, 10, 8), 2000],
+                            [Date.UTC(2019, 10, 13), 1000],
+                            [Date.UTC(2019, 10, 14), 2000],
+                            [Date.UTC(2019, 10, 15), 1000],
+                            [Date.UTC(2019, 10, 16), 2000],
+                            [Date.UTC(2019, 10, 17), 3000],
+                            [Date.UTC(2019, 10, 18), 4000],
+                            [Date.UTC(2019, 10, 19), 1000],
+                            [Date.UTC(2019, 10, 20), 3000],
+                            [Date.UTC(2019, 10, 21), 1000],
+                            [Date.UTC(2019, 10, 24), 1000],
+                            [Date.UTC(2019, 10, 30), 4000]
+                        ]
+                    },
+
+                    {
+                        name: "佛山",
+                        data: [
+                            [Date.UTC(2019, 10, 1), 1400],
+                            [Date.UTC(2019, 10, 2), 3400],
+                            [Date.UTC(2019, 10, 4), 1500],
+                            [Date.UTC(2019, 10, 5), 2200],
+                            [Date.UTC(2019, 10, 6), 4200],
+                            [Date.UTC(2019, 10, 7), 1800],
+                            [Date.UTC(2019, 10, 8), 2000],
+                            [Date.UTC(2019, 10, 13), 1800],
+                            [Date.UTC(2019, 10, 14), 2900],
+                            [Date.UTC(2019, 10, 15), 1400],
+                            [Date.UTC(2019, 10, 16), 2000],
+                            [Date.UTC(2019, 10, 17), 3000],
+                            [Date.UTC(2019, 10, 18), 4300],
+                            [Date.UTC(2019, 10, 19), 1700],
+                            [Date.UTC(2019, 10, 20), 3000],
+                            [Date.UTC(2019, 10, 21), 1300],
+                            [Date.UTC(2019, 10, 24), 1300],
+                            [Date.UTC(2019, 10, 28), 3000],
+                            [Date.UTC(2019, 11, 1), 5000],
+
+                            //[Date.UTC(1970, 9, 15), 0],
+                            //[Date.UTC(1970, 9, 31), 0.09],
+                            //[Date.UTC(1970, 10, 7), 0.17],
+                            //[Date.UTC(1970, 10, 10), 0.1],
+                            //[Date.UTC(1970, 11, 10), 0.1],
+                            //[Date.UTC(1970, 11, 13), 0.1],
+                            //[Date.UTC(1970, 11, 16), 0.11],
+                            //[Date.UTC(1970, 11, 19), 0.11],
+                            //[Date.UTC(1970, 11, 22), 0.08],
+                            //[Date.UTC(1970, 11, 25), 0.23],
+                            //[Date.UTC(1970, 11, 28), 0.37],
+                            //[Date.UTC(1971, 0, 16), 0.68],
+                            //[Date.UTC(1971, 0, 19), 0.55],
+                            //[Date.UTC(1971, 0, 22), 0.4],
+                            //[Date.UTC(1971, 0, 25), 0.4],
+                            //[Date.UTC(1971, 0, 28), 0.37],
+                            //[Date.UTC(1971, 0, 31), 0.43],
+                            //[Date.UTC(1971, 1, 4), 0.42],
+                            //[Date.UTC(1971, 1, 7), 0.39],
+                            //[Date.UTC(1971, 1, 10), 0.39],
+                            //[Date.UTC(1971, 1, 13), 0.39],
+                            //[Date.UTC(1971, 1, 16), 0.39],
+                            //[Date.UTC(1971, 1, 19), 0.35],
+                            //[Date.UTC(1971, 1, 22), 0.45],
+                            //[Date.UTC(1971, 1, 25), 0.62],
+                            //[Date.UTC(1971, 1, 28), 0.68],
+                            //[Date.UTC(1971, 2, 4), 0.68],
+                            //[Date.UTC(1971, 2, 7), 0.65],
+                            //[Date.UTC(1971, 2, 10), 0.65],
+                            //[Date.UTC(1971, 2, 13), 0.75],
+                            //[Date.UTC(1971, 2, 16), 0.86],
+                            //[Date.UTC(1971, 2, 19), 1.14],
+                            //[Date.UTC(1971, 2, 22), 1.2],
+                            //[Date.UTC(1971, 2, 25), 1.27],
+                            //[Date.UTC(1971, 2, 27), 1.12],
+                            //[Date.UTC(1971, 2, 30), 0.98],
+                            //[Date.UTC(1971, 3, 3), 0.85],
+                            //[Date.UTC(1971, 3, 6), 1.04],
+                            //[Date.UTC(1971, 3, 9), 0.92],
+                            //[Date.UTC(1971, 3, 12), 0.96],
+                            //[Date.UTC(1971, 3, 15), 0.94],
+                            //[Date.UTC(1971, 3, 18), 0.99],
+                            //[Date.UTC(1971, 3, 21), 0.96],
+                            //[Date.UTC(1971, 3, 24), 1.15],
+                            //[Date.UTC(1971, 3, 27), 1.18],
+                            //[Date.UTC(1971, 3, 30), 1.12],
+                            //[Date.UTC(1971, 4, 3), 1.06],
+                            //[Date.UTC(1971, 4, 6), 0.96],
+                            //[Date.UTC(1971, 4, 9), 0.87],
+                            //[Date.UTC(1971, 4, 12), 0.88],
+                            //[Date.UTC(1971, 4, 15), 0.79],
+                            //[Date.UTC(1971, 4, 18), 0.54],
+                            //[Date.UTC(1971, 4, 21), 0.34],
+                            //[Date.UTC(1971, 4, 25), 0]
+                        ]
+                    }
+                ],
+
+                responsive: {
+                    rules: [{
+                        condition: {
+                            maxWidth: 500
+                        },
+                        chartOptions: {
+                            plotOptions: {
+                                series: {
+                                    marker: {
+                                        radius: 2.5
+                                    }
+                                }
+                            }
+                        }
+                    }]
+                }
+            });
+
+
+
+        };
+
+    </script>
+
+</body>
+
+</html>

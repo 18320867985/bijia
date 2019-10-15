@@ -1,0 +1,43 @@
+
+/*index*/
+.ie8-border {
+    border: 1px solid #ddd !important;
+}
+
+.zhiding.self{
+    display: none ;
+}
+
+/*Ê×Ò³²¥Í¼ icon*/
+.index-cnt-swiper .banner-btn .iconfont {
+    color:#003399;
+}
+
+.common-nav .nav {
+    border: 1px solid #ddd;
+}
+
+.index .help-content .company-info {
+    border: 1px solid #ddd;
+}
+.member-content {
+    border: 1px solid #ddd;
+}
+.logo-r {
+    border: 1px solid #ddd;
+}
+
+.register-content, 
+.forget-content {
+    border: 1px solid #ddd;
+}
+
+.module, .page-cnt-newsList {
+    border: 2px solid #eee;
+}
+.detail-content ._cnt-r-t {
+    border: 2px solid #eee;
+}
+._cnt li {
+    border-bottom: 1px solid #eee;
+}

@@ -1,0 +1,130 @@
+
+@import "../var.scss";
+
+.sydt-cnt {
+    padding: 0 0 15px 0;
+
+    ._l-ttl {
+        margin-bottom: 20px;
+        height: 24px;
+        padding-right: 10px;
+
+        ul {
+        }
+
+        li {
+            float: left;
+
+            & + li {
+                margin-left: 30px;
+            }
+
+            &.active a {
+                background: $bg-active;
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+
+        a {
+            display: block;
+            height: 24px;
+            padding: 0 10px;
+            line-height: 24px;
+            font-size: 14px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.14);
+            border: 1px solid $line;
+            border-radius: 4px;
+            color: $index-top-color;
+            transition: all .5s ease;
+
+
+            &:hover {
+                box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.14);
+            }
+        }
+    }
+
+    ._l-tb {
+        .tb {
+            width: 100%;
+        }
+
+        .tb-cell {
+            vertical-align: middle;
+        }
+    }
+
+    ._l-tb-ttl {
+        width: 100%;
+        vertical-align: middle;
+        border-bottom: 1px solid $line;
+
+        > div {
+            line-height: 65px;
+            background: $pricevs-ttl-bg;
+            text-align: center;
+            font-size: 16px;
+            color: $pricevs-ttl-color;
+        }
+
+        .__itm1,
+        .__itm2 {
+            width: 150px;
+        }
+
+        .__itm3 {
+        }
+    }
+
+    ._l-tb-bd {
+        width: 100%;
+
+        .__itm {
+            border-bottom: 1px solid $line;
+        }
+
+        .__itm1 {
+            width: 150px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 24px;
+            color: $text-h;
+            border-right: 1px solid $line;
+        }
+
+        .__itm2 {
+            border-left: 1px solid $line;
+
+
+            .tb + .tb {
+                border-top: 1px solid $line
+            }
+
+            .tb:hover {
+                background: $bg-hover;
+            }
+        }
+
+        .__itm2-1 {
+            width: 150px;
+            padding: 20px;
+            text-align: center;
+            vertical-align: middle;
+            color: $text-h;
+        }
+
+        .__itm2-2 {
+            padding: 10px 20px;
+            color: #8d8d97;
+        }
+    }
+    // r
+    .hyxw-cnt-r ._b-r {
+        padding: 10px 20px 5px;
+        box-shadow: 0px 0px 12px 0px rgba(57, 57, 57, 0.14);
+    }
+}
+
+

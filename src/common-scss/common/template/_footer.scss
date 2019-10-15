@@ -1,0 +1,260 @@
+
+@import "../../var-base.scss";
+
+/*common-icon*/
+.common-icon ._lst2 {
+    margin-bottom: 60px;
+    font-size: 0;
+    text-align: justify;
+    text-justify: inter-ideograph;
+
+    li {
+        display: inline-block;
+        overflow: hidden;
+        font-size: 14px;
+
+        img {
+            float: left;
+            transition: all 1s;
+        }
+
+        &:hover {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+    }
+}
+
+/*footer*/
+.common-ft {
+    padding-top: 60px;
+    height: 309px;
+    background-color: #293239;
+
+    .ctr {
+        position: relative;
+    }
+}
+
+.common-ft-nav {
+
+    > li {
+        float: left;
+
+
+        a {
+            color: #fff;
+            font-size: 20px;
+            line-height: 1;
+
+            &:hover {
+                color: darken(#fff,10%);
+            }
+        }
+
+        & + li {
+            margin-left: 98px;
+        }
+    }
+}
+
+.common-ft-dl {
+    margin-top: 50px;
+    margin-bottom: 0;
+
+    dl {
+        float: left;
+        line-height: 1;
+
+        dt {
+            margin-bottom: 22px;
+            font-size: 20px;
+            color: #fff;
+            cursor: default;
+        }
+
+        dd {
+            line-height: 1.2;
+
+            a {
+                color: #fff;
+
+                &:hover {
+                    color: darken(#fff,10%);
+                }
+            }
+
+            &._tel {
+                margin-top: 10px;
+                font-size: 36px;
+                color: #fff !important;
+            }
+
+            & + dd {
+                margin-top: 10px;
+            }
+        }
+
+        & + dl {
+            margin-left: 60px;
+        }
+    }
+}
+
+
+.common-ft-cp {
+
+    p {
+        text-align: center;
+        color: $text-white;
+        //text-indent:-140px;
+        &:hover {
+            cursor: default;
+            color: darken($bg-white,10%);
+        }
+
+        a {
+            color: #fff;
+
+            &:hover {
+           
+                color: darken($bg-white,10%);
+            }
+        }
+    }
+}
+
+.common-ft-fixed {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 170px;
+    text-align: center;
+
+    > a {
+        display: block;
+        margin-bottom: 27px;
+        width: 100%;
+        height: 50px;
+    }
+
+    ._wxcode {
+        width: 136px;
+        display: inline-block;
+        vertical-align: top;
+
+        span {
+            display: inline-block;
+            width: 1em;
+            height: 87px;
+            color: #fff;
+            line-height: 1.5;
+            vertical-align: top;
+        }
+
+        img {
+            width: 87px;
+            height: 87px;
+        }
+
+        ._txt {
+            text-align: center;
+            color: #fff;
+        }
+    }
+}
+
+.common-slide {
+    height: 0;
+}
+
+.common-slide-pwr {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-common: 2;
+    margin-left: -108px;
+    font-size: 0;
+    background: transparent;
+    pointer-events: none;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
+.common-slide-box {
+    display: inline-block;
+    width: 88px;
+    padding: 6px;
+    font-size: 14px;
+    vertical-align: middle;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(57, 57, 57, 0.24);
+    pointer-events: visible;
+
+
+
+    &.in {
+        display: inline-block;
+        animation: common-slide .8s linear both;
+    }
+
+    &.out {
+        animation: common-slide2 .8s linear both;
+    }
+
+    &.init {
+        display: none;
+    }
+
+
+
+    > li {
+        height: 44px;
+
+        a {
+            display: inline-block;
+            line-height: 44px;
+            width: 100%;
+            text-align: center;
+            color: $text-muted;
+            transition: all .2s;
+            cursor: pointer;
+
+            &:hover {
+                color: $bg-active;
+            }
+        }
+
+        & + li {
+            border-top: 1px solid $line;
+        }
+
+        &.active {
+            a {
+                background: $bg-active;
+                border-radius: 8px;
+                color: #fff;
+            }
+        }
+
+        .iconfont {
+            color: $bg-active;
+            font-size: 20px;
+            vertical-align: -2px;
+        }
+    }
+}

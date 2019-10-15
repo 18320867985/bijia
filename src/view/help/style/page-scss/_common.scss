@@ -1,0 +1,99 @@
+
+@import "../var.scss";
+.logo {
+    margin:30px 0;
+    .logo-img {
+        margin-right:30px;
+        vertical-align:middle;
+    }
+
+    .logo-txt {
+        font-size: 24px;
+        color:$index-top-color;
+    }
+}
+.common-nav {
+    .nav {
+        float: left;
+        width: 170px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.14);
+
+        &.active {
+            position: fixed;
+            top: 0;
+        }
+
+        .nav-title {
+            width: 168px;
+            height: 60px;
+            line-height: 60px;
+            background-color: $pricevs-ttl-bg;
+            font-size: 20px;
+            color: $text-h;
+            font-weight: bold;
+            box-sizing: border-box;
+            padding-left: 20px;
+
+            img {
+                vertical-align: middle;
+            }
+        }
+
+        .nav-li {
+            margin: 13px 0;
+
+            li {
+                padding-left: 44px;
+                line-height: 48px;
+
+                &.active {
+                    a {
+                        color: $bg-active;
+                    }
+                }
+
+                &:hover {
+                    a {
+                        color:$bg-active;
+                    }
+                }
+
+                a {
+                    font-size: 16px;
+                    color: $index-top-color;
+                }
+            }
+        }
+    }
+}
+
+
+.help-content {
+    float: right;
+    width: 994px;
+
+    .title {
+        padding-left: 20px;
+        line-height: 60px;
+         margin-bottom:60px;
+        background-color:$index-top-bg;
+        font-size: 20px;
+        font-weight: bold;
+        color: #1e2128;
+        border-radius:5px;
+    }
+
+    h4 {
+        font-size: 20px;
+        color: $text-h;
+        margin: 20px 0 10px;
+    }
+
+    p {
+        margin:0;
+        line-height: 1.8;
+        font-size: 14px;
+        color: $index-top-color; 
+    }
+}

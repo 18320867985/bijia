@@ -1,0 +1,113 @@
+
+@import "../var.scss";
+.join-content {
+    .content-nav {
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        li {
+            float: left;
+            margin-right: 30px;
+            font-size: 16px;
+            color: #5b5e6a;
+            line-height: 2;
+            cursor: pointer;
+            transition: all .5s ease;
+            border-bottom: 4px solid transparent;
+
+            &.active {
+                color: $bg-active;
+                border-bottom: 4px solid;
+            }
+
+            &:hover {
+                color: $bg-active;
+            }
+        }
+    }
+
+    .list {
+        li {
+            display: none;
+
+            &.active {
+                display: block;
+                animation: list-in .5s ease both;
+            }
+        }
+    }
+}
+
+@keyframes list-in{
+    0%{
+
+        transform:translateX(100px);
+         opacity:0;
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.jobs {
+    padding: 30px 0;
+    border-bottom: 1px solid $line;
+
+    .jobs-name {
+        font-size: 24px;
+        color: $bg-active;
+
+        &:hover {
+            color: darken($bg-active,10%);
+        }
+    }
+
+    .jobs-salary {
+        line-height: 2;
+
+        span {
+            margin-right: 8px;
+            font-size: 16px;
+            color:$text-gray ;
+        }
+
+        .line {
+            color: $line;
+        }
+
+        .pay {
+            font-weight: bold;
+            color: $text-danger;
+        }
+    }
+
+    .jobs-duty {
+        margin-bottom: 30px;
+    }
+
+    .jobs-ability {
+    }
+
+    .jobs-welfare {
+        margin: 30px 0;
+        font-size: 14px;
+        color: #5b5e6a;
+
+        span {
+            margin-left: 20px;
+            padding: 4px 7px;
+            color: #003399;
+            background-color: #E5EAF5;
+            background-color: rgba(0,51,153,.1);
+        }
+    }
+
+    .jobs-contact {
+        span {
+            color: #5b5e6a;
+            margin-right: 30px;
+        }
+    }
+}
+

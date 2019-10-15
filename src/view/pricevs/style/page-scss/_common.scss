@@ -1,0 +1,187 @@
+
+@import "../var.scss";
+.qiatan {
+
+    .v-modal-cnt {
+        width: 582px;
+        height: 420px;
+        background: $bg-active;
+        color: #fff;
+    }
+
+    .v-modal-colse {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        line-height: 1;
+        font-size: 28px;
+        color: darken(#f0f0f0,10%);
+        cursor: pointer;
+        font-weight: 100;
+
+        &:hover {
+            color: darken(#f0f0f0,20%);
+        }
+    }
+
+    .v-modal-m {
+        margin-top: 60px;
+        text-align: center;
+
+        img {
+            width: 130px;
+            height: 130px;
+            background-color: #ffffff;
+            border-radius: 50%;
+             vertical-align:top;
+        }
+
+        img, .v-modal-m-txt {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .v-modal-m-txt {
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        p {
+            line-height: 1;
+        }
+
+        .p1 {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .p2 {
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .p3 {
+            font-size: 14px;
+        }
+    }
+
+    .v-modal-b {
+        margin-top: 70px;
+        text-align: left;
+        padding-left: 120px;
+
+        img {
+            width: 80px;
+            height: 80px;
+            background-color: #ffffff;
+            vertical-align:top;
+        }
+
+        img, .v-modal-b-txt {
+            display: inline-block;
+            margin-left: 8px;
+            vertical-align: middle;
+            text-align: left;
+        }
+    }
+}
+
+
+.xunjia {
+
+    .v-modal-cnt {
+        text-align: center;
+        font-size: 0;
+        min-height: 456px;
+    }
+
+    .v-modal-colse {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        line-height: 1;
+        font-size: 28px;
+        color: $bg-active;
+        cursor: pointer;
+        font-weight: 100;
+
+        &:hover {
+            color: darken($bg-active,10%);
+        }
+    }
+
+    .v-modal-cnt-l,
+    .v-modal-cnt-r {
+        display: inline-block;
+        width: 394px;
+        height:460px;
+        font-size: 14px;
+        vertical-align: top;
+    }
+
+    .v-modal-cnt-l {
+        img {
+            width: 394px;
+            height: 100%;
+            vertical-align: top;
+        }
+    }
+
+    .v-modal-cnt-r {
+        width: 394px;
+
+
+        h3 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #1e2128;
+            font-weight: bold;
+        }
+
+        ._form-input {
+            width: 314px;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+
+            input, select {
+                width: 100%;
+                padding-left: 10px;
+                font-size: 14px;
+                line-height: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background: #f0f3f5;
+                border: 1px solid $line;
+            }
+            // SUPPER IOS
+            select {
+                line-height: 40px;
+
+            }
+
+            ._form-btn {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                font-size: 16px;
+                line-height: 44px;
+                background: #f0f3f5;
+                text-align: center;
+                border: none;
+                outline: 0;
+
+                &.active {
+                    background: $bg-active;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

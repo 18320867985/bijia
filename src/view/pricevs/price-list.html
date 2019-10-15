@@ -1,0 +1,1427 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>价格对比</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="Keywords" content="塑金比价系统" />
+    <meta name="Description" content="塑金比价系统" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/cstFonts/index/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/view/pricevs.css" />
+
+    <!--[if lte IE 8]>
+        <script src="../../static/js/html5shiv.js"  type="text/javascript" charset="utf-8"></script>
+         <link rel="stylesheet" type="text/css" href="../../static/css/ie8.css" />
+    <![endif]-->
+    <!--check css-->
+    <script src="../../static/js/modernizr-2.6.2.min.js" defer type="text/javascript" charset="utf-8"></script>
+    <!--css3 prefix-->
+    <script src="../../static/js/prefix-css3.min.js" defer type="text/javascript" charset="utf-8"></script>
+    <script src="../../static/js/common-cdn.js" defer type="text/javascript" charset="utf-8"></script>
+
+    <!--[if lte IE 9]>
+         <script src="../../static/js/placeholder.js" defer type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+    <!--走势图 js-->
+    <script src="../../static/js/highchart/highcharts.js" defer></script>
+    <script src="../../static/js/highchart/series-label.js" defer></script>
+    <script src="../../static/js/highchart/exporting.js" defer></script>
+    <script src="../../static/js/highchart/export-data.js" defer></script>
+    <script src="../../static/js/highchart/highcharts-zh_cn.js" defer></script>
+
+    <!--[if lte IE 8]>
+    <script src="../../static/js/highchart/ie8/oldie-polyfills.js" defer></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <script src="../../static/js/highchart/ie8/oldie.js" defer></script>
+    <![endif]-->
+
+    <script data-parent="umd" data-umd="priceList" defer src="../../static/js/view/pricevs.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body class="pricelist">
+
+    <!--header-->
+    <include src="../../template/_header.html" data-nav data-index="1"></include>
+
+    <!--searchbox-->
+    <include src="../../template/_searchbox.html"></include>
+
+    <!--content-->
+    <section class="pricelist-cnt">
+
+        <!--搜索为空数据 -->
+        <div class="search-not-data ctr  d-hide">
+            <img src="../../static/images/search-not-data.png" alt="搜索为空数据 图标" />
+        </div>
+
+        <!--头部表格 -->
+        <div class="pricelist-cnt-tb ctr">
+
+            <!--大标题-->
+            <h2 class="_ttl">
+
+                <span>PP</span>
+                <span>中石化湛江东兴</span>
+                <span>PPH-T03</span>
+            </h2>
+
+            <!-- 左右两边-->
+            <div class="_pwr  cfx">
+
+                <!--右边-->
+                <div class="_r fr  ie8-border">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="td-1 elp">
+                                    塑料指数
+                                </td>
+                                <td class="td-2 elp">
+                                    指数值
+                                </td>
+                                <td class="td-3 elp">
+                                    涨跌
+                                </td>
+                                <td class="td-4 elp">
+                                    幅度
+                                </td>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="td-1 elp">
+                                    通用塑料价格指数
+                                </td>
+                                <td class="td-2 elp">
+                                    873.31
+                                </td>
+                                <td class="td-3 elp">
+
+                                    <!--涨幅-->
+                                    <span class="_sup">3.26</span>
+
+                                </td>
+                                <td class="td-4 elp">
+                                    <!--跌幅-->
+                                    <span class="_sub">-3.26%</span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="td-1 elp">
+                                    聚烯烃价格指数
+                                </td>
+                                <td class="td-2 elp">
+                                    873.31
+                                </td>
+                                <td class="td-3 elp">
+
+                                    <!--涨幅-->
+                                    <span class="_sup">3.26</span>
+
+                                </td>
+                                <td class="td-4 elp">
+                                    <!--跌幅-->
+                                    <span class="_sub">-3.26%</span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="td-1 elp">
+                                    PVC价格指数
+                                </td>
+                                <td class="td-2 elp">
+                                    873.31
+                                </td>
+                                <td class="td-3 elp">
+
+                                    <!--涨幅-->
+                                    <span class="_sup">3.26</span>
+
+                                </td>
+                                <td class="td-4 elp">
+                                    <!--跌幅-->
+                                    <span class="_sub">-3.26%</span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="td-1 elp">
+                                    工程塑料
+                                </td>
+                                <td class="td-2 elp">
+                                    873.31
+                                </td>
+                                <td class="td-3 elp">
+
+                                    <!--涨幅-->
+                                    <span class="_sup">3.26</span>
+
+                                </td>
+                                <td class="td-4 elp">
+                                    <!--跌幅-->
+                                    <span class="_sub">-3.26%</span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="td-1 elp">
+                                    再生塑料
+                                </td>
+                                <td class="td-2 elp">
+                                    873.31
+                                </td>
+                                <td class="td-3 elp">
+
+                                    <!--涨幅-->
+                                    <span class="_sup">3.26</span>
+
+                                </td>
+                                <td class="td-4 elp">
+                                    <!--跌幅-->
+                                    <span class="_sub">-3.26%</span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="td-1 elp">
+                                    农膜
+                                </td>
+                                <td class="td-2 elp">
+                                    873.31
+                                </td>
+                                <td class="td-3 elp">
+
+                                    <!--涨幅-->
+                                    <span class="_sup">3.26</span>
+
+                                </td>
+                                <td class="td-4 elp">
+                                    <!--跌幅-->
+                                    <span class="_sub">-3.26%</span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="td-1 elp">
+                                    再生塑料
+                                </td>
+                                <td class="td-2 elp">
+                                    873.31
+                                </td>
+                                <td class="td-3 elp">
+
+                                    <!--涨幅-->
+                                    <span class="_sup">3.26</span>
+
+                                </td>
+                                <td class="td-4 elp">
+                                    <!--跌幅-->
+                                    <span class="_sub">-3.26%</span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="td-1 elp">
+                                    农膜
+                                </td>
+                                <td class="td-2 elp">
+                                    873.31
+                                </td>
+                                <td class="td-3 elp">
+
+                                    <!--涨幅-->
+                                    <span class="_sup">3.26</span>
+
+                                </td>
+                                <td class="td-4 elp">
+                                    <!--跌幅-->
+                                    <span class="_sub">-3.26%</span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <!--左边-->
+                <div class="_l bfc   ie8-border">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="td-1 elp">
+                                    交货地
+                                </td>
+                                <td class="td-2 elp">
+                                    货物
+                                </td>
+                                <td class="td-3 elp">
+                                    价格(元/吨)
+                                </td>
+                                <td class="td-4 elp">
+                                    联系方式
+                                </td>
+                                <td class="td-5 elp">
+                                    询价
+                                </td>
+                                <td class="td-6 elp">
+                                    更多供应商
+                                </td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <!-- 加 active 是最低价-->
+                            <tr class="active">
+                                <td class="td-1 elp ">
+                                    <div class="relative">
+                                        <span class="_price">价格最低</span>
+                                        <!-- 加 active 是已收藏-->
+                                        <div class="_cltn  active ">
+                                            <div class="_df">
+                                                <span class="iconfont iconaixin "></span> <span>未收藏</span>
+                                            </div>
+                                            <div class="_ok">
+                                                <span class="iconfont iconaixin_shixin "></span> <span>已收藏</span>
+                                            </div>
+
+                                        </div>
+                                        广东东莞
+                                    </div>
+
+                                </td>
+                                <td class="td-2 elp">
+                                    PP | 中石化湛江东兴 | PPH-T03
+                                </td>
+                                <td class="td-3 elp">
+                                    ￥12000.00
+                                </td>
+                                <td class="td-4 elp">
+                                    <span>
+                                        <span class="iconfont icondianhua2 "></span> 洽谈
+                                    </span>
+
+                                </td>
+                                <td class="td-5 elp">
+                                    <span></span>
+                                </td>
+                                <td class="td-6 elp">
+                                    <a href="supplier.html">查看</a>
+
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="td-1 elp ">
+                                    <div class="relative">
+
+                                        <!-- 加 active 是已收藏-->
+                                        <div class="_cltn  active ">
+                                            <div class="_df">
+                                                <span class="iconfont iconaixin "></span> <span>未收藏</span>
+                                            </div>
+                                            <div class="_ok">
+                                                <span class="iconfont iconaixin_shixin "></span> <span>已收藏</span>
+                                            </div>
+
+                                        </div>
+                                        广东东莞
+                                    </div>
+
+                                </td>
+                                <td class="td-2 elp">
+                                    PP | 中石化湛江东兴 | PPH-T03
+                                </td>
+                                <td class="td-3 elp">
+                                    ￥12000.00
+                                </td>
+                                <td class="td-4 elp">
+                                    <span>
+                                        <span class="iconfont icondianhua2 "></span> 洽谈
+                                    </span>
+
+                                </td>
+                                <td class="td-5 elp">
+                                    <span></span>
+                                </td>
+                                <td class="td-6 elp">
+                                    <a href="supplier.html">查看</a>
+
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="td-1 elp ">
+                                    <div class="relative">
+
+                                        <!-- 加 active 是已收藏-->
+                                        <div class="_cltn  active ">
+                                            <div class="_df">
+                                                <span class="iconfont iconaixin "></span> <span>未收藏</span>
+                                            </div>
+                                            <div class="_ok">
+                                                <span class="iconfont iconaixin_shixin "></span> <span>已收藏</span>
+                                            </div>
+
+                                        </div>
+                                        广东东莞
+                                    </div>
+
+                                </td>
+                                <td class="td-2 elp">
+                                    PP | 中石化湛江东兴 | PPH-T03
+                                </td>
+                                <td class="td-3 elp">
+                                    ￥12000.00
+                                </td>
+                                <td class="td-4 elp">
+                                    <span>
+                                        <span class="iconfont icondianhua2 "></span> 洽谈
+                                    </span>
+
+                                </td>
+                                <td class="td-5 elp">
+                                    <span></span>
+                                </td>
+                                <td class="td-6 elp">
+                                    <a href="supplier.html">查看</a>
+
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="td-1 elp ">
+                                    <div class="relative">
+
+                                        <!-- 加 active 是已收藏-->
+                                        <div class="_cltn  active ">
+                                            <div class="_df">
+                                                <span class="iconfont iconaixin "></span> <span>未收藏</span>
+                                            </div>
+                                            <div class="_ok">
+                                                <span class="iconfont iconaixin_shixin "></span> <span>已收藏</span>
+                                            </div>
+
+                                        </div>
+                                        广东东莞
+                                    </div>
+
+                                </td>
+                                <td class="td-2 elp">
+                                    PP | 中石化湛江东兴 | PPH-T03
+                                </td>
+                                <td class="td-3 elp">
+                                    ￥12000.00
+                                </td>
+                                <td class="td-4 elp">
+                                    <span>
+                                        <span class="iconfont icondianhua2 "></span> 洽谈
+                                    </span>
+
+                                </td>
+                                <td class="td-5 elp">
+                                    <span></span>
+                                </td>
+                                <td class="td-6 elp">
+                                    <a href="supplier.html">查看</a>
+
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="td-1 elp ">
+                                    <div class="relative">
+
+                                        <!-- 加 active 是已收藏-->
+                                        <div class="_cltn  active ">
+                                            <div class="_df">
+                                                <span class="iconfont iconaixin "></span> <span>未收藏</span>
+                                            </div>
+                                            <div class="_ok">
+                                                <span class="iconfont iconaixin_shixin "></span> <span>已收藏</span>
+                                            </div>
+
+                                        </div>
+                                        广东东莞
+                                    </div>
+
+                                </td>
+                                <td class="td-2 elp">
+                                    PP | 中石化湛江东兴 | PPH-T03
+                                </td>
+                                <td class="td-3 elp">
+                                    ￥12000.00
+                                </td>
+                                <td class="td-4 elp">
+                                    <span>
+                                        <span class="iconfont icondianhua2 "></span> 洽谈
+                                    </span>
+
+                                </td>
+                                <td class="td-5 elp">
+                                    <span></span>
+                                </td>
+                                <td class="td-6 elp">
+                                    <a href="supplier.html">查看</a>
+
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="td-1 elp ">
+                                    <div class="relative">
+
+                                        <!-- 加 active 是已收藏-->
+                                        <div class="_cltn   ">
+                                            <div class="_df">
+                                                <span class="iconfont iconaixin "></span> <span>未收藏</span>
+                                            </div>
+                                            <div class="_ok">
+                                                <span class="iconfont iconaixin_shixin "></span> <span>已收藏</span>
+                                            </div>
+
+                                        </div>
+                                        广东东莞
+                                    </div>
+
+                                </td>
+                                <td class="td-2 elp">
+                                    PP | 中石化湛江东兴 | PPH-T03
+                                </td>
+                                <td class="td-3 elp">
+                                    ￥12000.00
+                                </td>
+                                <td class="td-4 elp">
+                                    <span>
+                                        <span class="iconfont icondianhua2 "></span> 洽谈
+                                    </span>
+
+                                </td>
+                                <td class="td-5 elp">
+                                    <span></span>
+                                </td>
+                                <td class="td-6 elp">
+                                    <a href="supplier.html">查看</a>
+
+                                </td>
+                            </tr>
+
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--走势图 -->
+        <div class="pricelist-cnt-map ctr">
+
+            <h2>价格走势图</h2>
+
+            <div class="cfx">
+                <div class="_btns v-radiobtn-group">
+                    <a class=" v-radiobtn-item active" href="#">近一周</a>
+                    <a class=" v-radiobtn-item" href="#">近一月</a>
+                    <a class=" v-radiobtn-item" href="#">近一年</a>
+                </div>
+            </div>
+
+            <!--走势图-->
+            <div class="_map" id="map">
+
+            </div>
+
+        </div>
+
+        <!--动态部分 -->
+        <div class="pricelist-cnt-dy ctr cfx">
+
+            <!--右边-->
+            <div class="_r fr">
+                <!--今日行情-->
+                <div class="_r-hq cfx  ie8-border">
+                    <h3 class="_r-hq-ttl">
+                        今<img src=" ../../static/images/index/q.png" alt="Alternate Text" />行情
+                        <a href="javascript:;">更多+</a>
+                    </h3>
+                    <ul class="_r-hq-lst">
+                        <li>
+                            <a class="elp" href="#">
+                                <span class="">12:34</span>
+                                <img src=" ../../static/images/index/hq1.png" alt="今日行情 icon" />
+                                ABS塑料原料华东地区今日价格上涨塑料原料华东地区今日价格上涨
+                            </a>
+
+                        </li>
+                        <li>
+                            <a class="elp" href="#">
+                                <span class="">12:34</span>
+                                <img src=" ../../static/images/index/hq2.png" alt="今日行情 icon" />
+                                ABS塑料原料华东地区今日价格上涨
+                            </a>
+                        </li>
+                        <li>
+                            <a class="elp" href="#">
+                                <span class="">12:34</span>
+                                <img src=" ../../static/images/index/hq3.png" alt="今日行情 icon" />
+                                ABS塑料原料华东地区今日价格上涨
+                            </a>
+                        </li>
+                        <li>
+                            <a class="elp not-icon" href="#">
+                                <span class="">12:34</span>
+                                ABS塑料原料华东地区今日价格上涨
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="elp not-icon" href="#">
+                                <span class="">12:34</span>
+                                ABS塑料原料华东地区今日价格上涨
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- 品名日评-->
+                <div class="_r-rp  cfx  ie8-border">
+                    <div class="_b-l">
+
+                        <!--品名日评-->
+                        <div class="_cnt-l-t">
+                            <h3 class="_cnt-l-ttl">
+                                品名日评
+                                <a href="javascript:;">更多+</a>
+                            </h3>
+                        </div>
+
+                        <!-- 内容列表-->
+                        <ul class="_b-l-lst">
+                            <!-- 7个列表-->
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a class="bfc" href="#">
+                                    <div class="_b-l-lst-l fl">
+                                        <p>ABS</p>
+                                        <p>日评</p>
+                                    </div>
+
+                                    <div class="_b-l-lst-r fr">
+                                        12:04
+                                    </div>
+
+
+                                    <div class="_b-l-lst-m bfc">
+
+                                        <p class="elp">
+                                            再生PP日评：6. 25价格以稳为主成交再生PP日评：6. 25价格以稳为主成交
+                                        </p>
+                                        <p>
+                                            延续
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <!-- 上游动态-->
+                <div class="_r-dt  ie8-border">
+                    <div class="_b-r ">
+
+                        <!--行业知识-->
+                        <div class="_cnt-l-t bfc">
+
+                            <h3 class="_cnt-l-ttl">
+                                上游动态
+                                <a href="javascript:;">更多+</a>
+                            </h3>
+                        </div>
+
+                        <!-- 内容列表-->
+
+                        <ul class="_b-r-lst">
+
+                            <li class="_b-r-lst-itm">
+                                <a href="#">
+                                    <h4 class="__ttl elp">聚四氟乙烯微孔薄膜的应用</h4>
+
+                                    <section class="__cnt bfc">
+                                        <div class="fl __img">
+                                            <img src="../../static/images/index/htzx-hyxw-banner02.png" alt="行业知识图" />
+                                        </div>
+
+                                        <p class="elp-2">作为聚四氟乙烯材料加工企业抓安全生产就要按标准条例严格执行。国家职业病诊断标准和处理标...</p>
+                                        <div class="__date">02-14</div>
+                                    </section>
+                                </a>
+
+                            </li>
+
+                            <li class="_b-r-lst-itm">
+                                <a href="#">
+                                    <h4 class="__ttl elp">聚四氟乙烯微孔薄膜的应用</h4>
+
+                                    <section class="__cnt bfc">
+                                        <div class="fl __img">
+                                            <img src="../../static/images/index/htzx-hyxw-banner02.png" alt="行业知识图" />
+                                        </div>
+
+                                        <p class="elp-2">作为聚四氟乙烯材料加工企业抓安全生产就要按标准条例严格执行。国家职业病诊断标准和处理标...</p>
+                                        <div class="__date">02-14</div>
+                                    </section>
+                                </a>
+
+                            </li>
+
+                            <li class="_b-r-lst-itm">
+                                <a href="#">
+                                    <h4 class="__ttl elp">聚四氟乙烯微孔薄膜的应用</h4>
+
+                                    <section class="__cnt bfc">
+                                        <div class="fl __img">
+                                            <img src="../../static/images/index/htzx-hyxw-banner02.png" alt="行业知识图" />
+                                        </div>
+
+                                        <p class="elp-2">作为聚四氟乙烯材料加工企业抓安全生产就要按标准条例严格执行。国家职业病诊断标准和处理标...</p>
+                                        <div class="__date">02-14</div>
+                                    </section>
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--左边-->
+            <div class="_l  ie8-border">
+
+                <!--大的表格-->
+                <div class="_l-tb">
+
+                    <!--ttl-->
+                    <div class="_l-tb-ttl tb tb-fixed">
+                        <div class="__itm1 tb-cell">
+                            地区
+                        </div>
+                        <div class="__itm2 tb-cell">
+                            厂商
+                        </div>
+                        <div class="__itm3 tb-cell">
+                            动态
+                        </div>
+                    </div>
+
+                    <!--cnt-->
+                    <div class="_l-tb-bd ">
+
+                        <!--item-->
+                        <div class=" __itm tb tb-fixed">
+                            <!--item-l-->
+                            <div class="__itm1 tb-cell">
+                                华南
+                            </div>
+                            <!--item-r-->
+                            <div class="__itm2 tb-cell ">
+
+                                <div class="tb tb-fixed">
+                                    <div class=" __itm2-1 tb-cell  ">
+                                        江苏斯尔邦石化
+                                    </div>
+                                    <div class="__itm2-2 tb-cell">
+                                        目前装置维持满负荷运行。据悉厂家将于5月下旬对其年产20万吨0215A装置进行装置清洗，
+                                        产量预估损失不大，另外两套总计年产40万吨装置期间将生产正常
+                                    </div>
+                                </div>
+                                <!--item-r-->
+                                <div class="tb tb-fixed">
+                                    <div class="tb-cell  __itm2-1">
+                                        江苏斯尔邦石化
+                                    </div>
+                                    <div class="tb-cell  __itm2-2">
+                                        目前装置维持满负荷运行。据悉厂家将于5月下旬对其年产20万吨0215A装置进行装置清洗，
+                                        产量预估损失不大，另外两套总计年产40万吨装置期间将生产正常
+                                    </div>
+                                </div>
+
+                                <!--item-r-->
+                                <div class="tb tb-fixed">
+                                    <div class="tb-cell  __itm2-1">
+                                        江苏斯尔邦石化
+                                    </div>
+                                    <div class="tb-cell  __itm2-2">
+                                        目前装置维持满负荷运行。据悉厂家将于5月下旬对其年产20万吨
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class=" __itm tb tb-fixed">
+                            <!--item-l-->
+                            <div class="__itm1 tb-cell">
+                                华北
+                            </div>
+                            <!--item-r-->
+                            <div class="__itm2 tb-cell ">
+
+                                <div class="tb tb-fixed">
+                                    <div class=" __itm2-1 tb-cell  ">
+                                        江苏斯尔邦石化
+                                    </div>
+                                    <div class="__itm2-2 tb-cell">
+                                        目前装置维持满负荷运行。据悉厂家将于5月下旬对其年产20万吨0215A装置进行装置清洗，
+                                        产量预估损失不大，另外两套总计年产40万吨装置期间将生产正常
+                                    </div>
+                                </div>
+
+                                <div class="tb tb-fixed">
+                                    <div class="tb-cell  __itm2-1">
+                                        江苏斯尔邦石化
+                                    </div>
+                                    <div class="tb-cell  __itm2-2">
+                                        目前装置维持满负荷运行。据悉厂家将于5月下旬对其年产20万吨0215A装置进行装置清洗，
+                                        产量预估损失不大，另外两套总计年产40万吨装置期间将生产正常
+                                    </div>
+                                </div>
+
+
+                                <div class="tb tb-fixed">
+                                    <div class="tb-cell  __itm2-1">
+                                        江苏斯尔邦石化
+                                    </div>
+                                    <div class="tb-cell  __itm2-2">
+                                        目前装置维持满负荷运行。据悉厂家将于5月下旬对其年产20万吨
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class=" __itm tb tb-fixed">
+                            <!--item-l-->
+                            <div class="__itm1 tb-cell">
+                                华中
+                            </div>
+                            <!--item-r-->
+                            <div class="__itm2 tb-cell ">
+
+                                <div class="tb tb-fixed">
+                                    <div class=" __itm2-1 tb-cell  ">
+                                        江苏斯尔邦石化江苏斯尔邦石化
+                                    </div>
+                                    <div class="__itm2-2 tb-cell">
+                                        目前装置维持满负荷运行。据悉厂家将于5月下旬对其年产20万吨0215A装置进行装置清洗，
+                                        产量预估损失不大，另外两套总计年产40万吨装置期间将生产正常
+                                    </div>
+                                </div>
+
+                                <div class="tb tb-fixed">
+                                    <div class="tb-cell  __itm2-1">
+                                        江苏斯尔邦石化
+                                    </div>
+                                    <div class="tb-cell  __itm2-2">
+                                        目前装置维持满负荷运行。据悉厂家将于5月下旬对其年产20万吨0215A装置进行装置清洗，
+                                        产量预估损失不大，另外两套总计年产40万吨装置期间将生产正常
+                                    </div>
+                                </div>
+
+
+                                <div class="tb tb-fixed">
+                                    <div class="tb-cell  __itm2-1">
+                                        江苏斯尔邦石化
+                                    </div>
+                                    <div class="tb-cell  __itm2-2">
+                                        目前装置维持满负荷运行。据悉厂家将于5月下旬对其年产20万吨
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class=" __itm tb tb-fixed">
+                            <!--item-l-->
+                            <div class="__itm1 tb-cell">
+                                华东
+                            </div>
+                            <!--item-r-->
+                            <div class="__itm2 tb-cell ">
+
+                                <div class="tb tb-fixed">
+                                    <div class=" __itm2-1 tb-cell  ">
+                                        江苏斯尔邦石化江苏斯尔邦石化
+                                    </div>
+                                    <div class="__itm2-2 tb-cell">
+                                        目前装置维持满负荷运行。据悉厂家将于5月下旬对其年产20万吨0215A装置进行装置清洗，
+                                        产量预估损失不大，另外两套总计年产40万吨装置期间将生产正常
+                                    </div>
+                                </div>
+
+                                <div class="tb tb-fixed">
+                                    <div class="tb-cell  __itm2-1">
+                                        江苏斯尔邦石化
+                                    </div>
+                                    <div class="tb-cell  __itm2-2">
+                                        目前装置维持满负荷运行。据悉厂家将于5月下旬对其年产20万吨0215A装置进行装置清洗，
+                                        产量预估损失不大，另外两套总计年产40万吨装置期间将生产正常
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--item-->
+                        <div class=" __itm tb tb-fixed">
+                            <!--item-l-->
+                            <div class="__itm1 tb-cell">
+                                海外
+                            </div>
+                            <!--item-r-->
+                            <div class="__itm2 tb-cell ">
+
+                                <div class="tb tb-fixed">
+                                    <div class="tb-cell  __itm2-1">
+                                        江苏斯尔邦石化
+                                    </div>
+                                    <div class="tb-cell  __itm2-2">
+                                        目前装置维持满负荷运行。据悉厂家将于5月下旬对其年产20万吨0215A装置进行装置清洗，
+                                        产量预估损失不大，另外两套总计年产40万吨装置期间将生产正常
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--modal 洽谈-->
+    <div class="v-modal v-init qiatan" data-backdrop="false">
+
+        <!--  supper ie8  v-ie8-mask -->
+        <div class="v-ie8-mask"></div>
+
+        <div class="v-modal-cnt">
+
+            <div class="v-modal-colse" data-dismiss="v-modal">
+                <span>&times;</span>
+            </div>
+
+            <div class="v-modal-m cfx">
+
+                <img class="" src="../../static/images/index/pricevs/jgdb-qt-tx.png" alt="洽谈图片" />
+                <div class="v-modal-m-txt ">
+                    <p class="p1">  黄先生:</p>
+                    <p class="p2">13723559114</p>
+                    <p class="p3">该号码60秒后失效</p>
+                </div>
+            </div>
+
+            <div class="v-modal-b">
+                <img src="../../static/images/index/pricevs/jgdb-qt-gzhm.png" alt="头像" />
+                <div class="v-modal-b-txt">
+                    <p>比价网邀请您关注二维码  </p>
+                    <p>了解最新动态</p>
+                    <p> 掌握最新价格</p>
+                    <p>上游动态实施知晓</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--modal 下单询价-->
+    <div class="v-modal  v-init  xunjia " data-backdrop="false">
+
+        <!--  supper ie8  v-ie8-mask -->
+        <div class="v-ie8-mask"></div>
+
+        <div class="v-modal-cnt v-init cfx" style="padding:0;">
+
+            <!--左边图片-->
+            <div class="v-modal-cnt-l">
+                <img src="../../static/images/index/pricevs/jgdb-xj-bj.jpg" alt="下单询价图片" />
+            </div>
+
+            <!--右边表单-->
+            <div class="v-modal-cnt-r">
+                <div class="v-modal-colse" data-dismiss="v-modal">
+                    <span>&times;</span>
+                </div>
+
+                <h3>下单询价</h3>
+                <div class="_form">
+                    <div class="_form-input">
+                        <input type="text" name="name" value="" placeholder="请输入姓名" autocomplete="off" />
+                    </div>
+                    <div class="_form-input">
+                        <input type="text" name="name" value="" placeholder="请输入手机号码" autocomplete="off" />
+                    </div>
+                    <div class="_form-input" autocomplete="off">
+                        <select>
+                            <option value="" class="_plc">请选择地址</option>
+                            <option value="东莞">东莞</option>
+                            <option value="佛山">佛山</option>
+                        </select>
+                    </div>
+
+                    <div class="_form-input">
+                        <input class="__txt" type="text" name="name" value="" placeholder="请输入购买吨数" autocomplete="off" />
+                    </div>
+                    <div class="_form-input">
+                        <button class="_form-btn active" type="button">提交</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!--icon-->
+    <include src="../../template/_icon.html"></include>
+
+    <!--footer-->
+    <include src="../../template/_footer.html"></include>
+
+    <!--置顶-->
+    <div class="zhiding self">
+        <img src="../../static/images/index/zhiding.png" alt="置顶" title="到页面顶部" />
+        <!--<span class="iconicon-test iconfont"></span>-->
+    </div>
+
+
+    <script>
+
+        // 走势图
+        window.onload = function () {
+
+
+            Highcharts.chart('map', {
+                chart: {
+                    type: 'spline'
+                },
+
+                subtitle: {
+                    text: ''
+                },
+                title: {
+                    text: ' PP | 中石化湛江东兴 | PPH-T03',
+                    style: { "color": "#111", "fontSize": "18px", "fontWeight": "bold" }
+                },
+                colors: ['red', 'blue', 'green', 'orangered', '#7d1659', '#f15c80', '#e4d354', '#2b908f', '#f45b5b', '#91e8e1'], //默认颜色数组
+                //colors: ['#6CF', '#39F', '#06C', '#036', '#000'],
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: { // don't display the dummy year
+                        month: '%e. %b',
+                        // year: '%b'
+                    },
+                    title: {
+                        text: ''
+                    }
+                },
+                yAxis: {
+                    //title: {
+                    //    text: 'Snow depth (m)'
+                    //},
+                    title: {
+                        text: ""// '单位（元/吨）'
+                    }, labels: {
+                        formatter: function () {
+                            return (this.value) + " (元/吨)"
+                        },
+                        style: { "color": "#444", "cursor": "default", "fontSize": "12px" }
+                    },
+                    min: 0
+                },
+                tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '{point.x:%b %e }号/{point.y:.2f}(元/吨)'
+                },
+
+                plotOptions: {
+                    series: {
+                        marker: {
+                            enabled: true
+                        }
+                    }
+                },
+
+
+
+                // Define the data points. All series have a dummy year
+                // of 1970/71 in order to be compared on the same x axis. Note
+                // that in JavaScript, months start at 0 for January, 1 for February etc.
+                series: [
+
+                    {
+                        name: "余姚",
+                        data: [
+                            [Date.UTC(2019, 10, 1), 2000],
+                            [Date.UTC(2019, 10, 2), 2700],
+                            [Date.UTC(2019, 10, 3), 1070],
+                            [Date.UTC(2019, 10, 5), 2400],
+                            [Date.UTC(2019, 10, 6), 2800],
+                            [Date.UTC(2019, 10, 7), 1000],
+                            [Date.UTC(2019, 10, 8), 2600],
+                            [Date.UTC(2019, 10, 13), 1000],
+                            [Date.UTC(2019, 10, 14), 2000],
+                            [Date.UTC(2019, 10, 15), 1000],
+                            [Date.UTC(2019, 10, 16), 2000],
+                            [Date.UTC(2019, 10, 17), 3000],
+                            [Date.UTC(2019, 10, 18), 4700],
+                            [Date.UTC(2019, 10, 19), 1060],
+                            [Date.UTC(2019, 10, 20), 3000],
+                            [Date.UTC(2019, 10, 21), 1000],
+                            [Date.UTC(2019, 10, 24), 1700],
+                            [Date.UTC(2019, 10, 30), 4200]
+                        ]
+                    },
+
+                    {
+                        name: "东莞",
+                        data: [
+                            [Date.UTC(2019, 10, 1), 1000],
+                            [Date.UTC(2019, 10, 2), 2000],
+                            [Date.UTC(2019, 10, 3), 1000],
+                            [Date.UTC(2019, 10, 5), 2000],
+                            [Date.UTC(2019, 10, 6), 2000],
+                            [Date.UTC(2019, 10, 7), 1000],
+                            [Date.UTC(2019, 10, 8), 2000],
+                            [Date.UTC(2019, 10, 13), 1000],
+                            [Date.UTC(2019, 10, 14), 2000],
+                            [Date.UTC(2019, 10, 15), 1000],
+                            [Date.UTC(2019, 10, 16), 2000],
+                            [Date.UTC(2019, 10, 17), 3000],
+                            [Date.UTC(2019, 10, 18), 4000],
+                            [Date.UTC(2019, 10, 19), 1000],
+                            [Date.UTC(2019, 10, 20), 3000],
+                            [Date.UTC(2019, 10, 21), 1000],
+                            [Date.UTC(2019, 10, 24), 1000],
+                            [Date.UTC(2019, 10, 30), 4000]
+                        ]
+                    },
+
+                    {
+                        name: "佛山",
+                        data: [
+                            [Date.UTC(2019, 10, 1), 1400],
+                            [Date.UTC(2019, 10, 2), 3400],
+                            [Date.UTC(2019, 10, 4), 1500],
+                            [Date.UTC(2019, 10, 5), 2200],
+                            [Date.UTC(2019, 10, 6), 4200],
+                            [Date.UTC(2019, 10, 7), 1800],
+                            [Date.UTC(2019, 10, 8), 2000],
+                            [Date.UTC(2019, 10, 13), 1800],
+                            [Date.UTC(2019, 10, 14), 2900],
+                            [Date.UTC(2019, 10, 15), 1400],
+                            [Date.UTC(2019, 10, 16), 2000],
+                            [Date.UTC(2019, 10, 17), 3000],
+                            [Date.UTC(2019, 10, 18), 4300],
+                            [Date.UTC(2019, 10, 19), 1700],
+                            [Date.UTC(2019, 10, 20), 3000],
+                            [Date.UTC(2019, 10, 21), 1300],
+                            [Date.UTC(2019, 10, 24), 1300],
+                            [Date.UTC(2019, 10, 28), 3000],
+                            [Date.UTC(2019, 11, 1), 5000],
+
+                            //[Date.UTC(1970, 9, 15), 0],
+                            //[Date.UTC(1970, 9, 31), 0.09],
+                            //[Date.UTC(1970, 10, 7), 0.17],
+                            //[Date.UTC(1970, 10, 10), 0.1],
+                            //[Date.UTC(1970, 11, 10), 0.1],
+                            //[Date.UTC(1970, 11, 13), 0.1],
+                            //[Date.UTC(1970, 11, 16), 0.11],
+                            //[Date.UTC(1970, 11, 19), 0.11],
+                            //[Date.UTC(1970, 11, 22), 0.08],
+                            //[Date.UTC(1970, 11, 25), 0.23],
+                            //[Date.UTC(1970, 11, 28), 0.37],
+                            //[Date.UTC(1971, 0, 16), 0.68],
+                            //[Date.UTC(1971, 0, 19), 0.55],
+                            //[Date.UTC(1971, 0, 22), 0.4],
+                            //[Date.UTC(1971, 0, 25), 0.4],
+                            //[Date.UTC(1971, 0, 28), 0.37],
+                            //[Date.UTC(1971, 0, 31), 0.43],
+                            //[Date.UTC(1971, 1, 4), 0.42],
+                            //[Date.UTC(1971, 1, 7), 0.39],
+                            //[Date.UTC(1971, 1, 10), 0.39],
+                            //[Date.UTC(1971, 1, 13), 0.39],
+                            //[Date.UTC(1971, 1, 16), 0.39],
+                            //[Date.UTC(1971, 1, 19), 0.35],
+                            //[Date.UTC(1971, 1, 22), 0.45],
+                            //[Date.UTC(1971, 1, 25), 0.62],
+                            //[Date.UTC(1971, 1, 28), 0.68],
+                            //[Date.UTC(1971, 2, 4), 0.68],
+                            //[Date.UTC(1971, 2, 7), 0.65],
+                            //[Date.UTC(1971, 2, 10), 0.65],
+                            //[Date.UTC(1971, 2, 13), 0.75],
+                            //[Date.UTC(1971, 2, 16), 0.86],
+                            //[Date.UTC(1971, 2, 19), 1.14],
+                            //[Date.UTC(1971, 2, 22), 1.2],
+                            //[Date.UTC(1971, 2, 25), 1.27],
+                            //[Date.UTC(1971, 2, 27), 1.12],
+                            //[Date.UTC(1971, 2, 30), 0.98],
+                            //[Date.UTC(1971, 3, 3), 0.85],
+                            //[Date.UTC(1971, 3, 6), 1.04],
+                            //[Date.UTC(1971, 3, 9), 0.92],
+                            //[Date.UTC(1971, 3, 12), 0.96],
+                            //[Date.UTC(1971, 3, 15), 0.94],
+                            //[Date.UTC(1971, 3, 18), 0.99],
+                            //[Date.UTC(1971, 3, 21), 0.96],
+                            //[Date.UTC(1971, 3, 24), 1.15],
+                            //[Date.UTC(1971, 3, 27), 1.18],
+                            //[Date.UTC(1971, 3, 30), 1.12],
+                            //[Date.UTC(1971, 4, 3), 1.06],
+                            //[Date.UTC(1971, 4, 6), 0.96],
+                            //[Date.UTC(1971, 4, 9), 0.87],
+                            //[Date.UTC(1971, 4, 12), 0.88],
+                            //[Date.UTC(1971, 4, 15), 0.79],
+                            //[Date.UTC(1971, 4, 18), 0.54],
+                            //[Date.UTC(1971, 4, 21), 0.34],
+                            //[Date.UTC(1971, 4, 25), 0]
+                        ]
+                    }
+                ],
+
+                responsive: {
+                    rules: [{
+                        condition: {
+                            maxWidth: 500
+                        },
+                        chartOptions: {
+                            plotOptions: {
+                                series: {
+                                    marker: {
+                                        radius: 2.5
+                                    }
+                                }
+                            }
+                        }
+                    }]
+                }
+            });
+
+
+
+        };
+
+    </script>
+
+</body>
+
+</html>
+

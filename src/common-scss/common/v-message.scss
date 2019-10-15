@@ -1,0 +1,318 @@
+
+@import "../var-base.scss";
+
+.html-v-message {
+    overflow: hidden;
+    padding-right: 17px;
+}
+
+.v-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: none;
+    text-align: center;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
+.v-message-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #000;
+    filter: alpha(opacity=40);
+    /* for IE8 and earlier */
+    opacity: .4;
+    transition: all .5s;
+}
+
+
+/*confirm*/
+.confirm-box {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 400px;
+    max-width: 500px;
+    padding: 15px 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    //  outline: 10px solid rgba(255, 255, 255, .3);
+    box-shadow: 0 0 20px rgba(0,0,0,.075);
+    color: #606266;
+    animation: confirm-box-in .5s ease both;
+
+    ._close {
+        position: absolute;
+        right: 12px;
+        top: 5px;
+        font-size: 20px;
+        font-weight: 100;
+        color: #999;
+        cursor: pointer;
+
+        &:hover {
+            color: $text-primary;
+        }
+    }
+    // tip
+    .tip {
+        text-align: left;
+        font-size: 18px;
+        color: #444;
+    }
+    /*ttl*/
+    .ttl {
+        /*margin-top: 15px;*/
+        padding-left: 2em;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #606266;
+        text-align: left;
+        letter-spacing: 1px;
+    }
+    /*按钮*/
+    .confirm-btn {
+        float: right;
+        margin-top: 10px;
+        padding: 8px 16px;
+        line-height: 1;
+        text-align: center;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        transition: all .25s;
+        outline: none;
+        margin-left: 20px;
+
+        &.ok {
+            background: $text-primary;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background: darken( $text-primary, 10%);
+                color: #f8f8f8;
+                box-shadow: -2px -2px 5px darken( $text-primary, 10%) inset;
+            }
+        }
+
+        &.cancel {
+            background: transparent;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #606266;
+
+            &:hover {
+                color: lighten( $text-primary, 10%);
+                border: 1px solid lighten( $text-primary, 10%);
+                //box-shadow: -2px -2px 5px darken( $text-warning, 10%) inset;
+            }
+        }
+
+        & + .confirm-btn {
+            margin-left: 25px;
+        }
+    }
+}
+
+
+
+@keyframes confirm-box-in {
+
+    0% {
+        opacity: 0;
+        transform: translateZ(0) translateY(-800px) scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/*prompt*/
+
+.v-message input.txt {
+    box-sizing: border-box;
+    display: block;
+    height: 34px;
+    width: 80%;
+    margin: 10px 0 5px 2em;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,.075);
+
+    &:focus {
+        border: 1px solid lighten($text-primary,10%);
+        box-shadow: 0 0 4px lighten($text-primary,10%);
+    }
+}
+
+.v-message p.err {
+    padding-left: 2em;
+    margin-bottom: 0;
+    text-align: left;
+    color: $text-danger;
+}
+/*info*/
+.v-messageinfo {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    font-size: 0;
+    text-align: center;
+    pointer-events: none;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        height: 90%;
+        vertical-align: middle;
+    }
+}
+
+.info-box {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    outline: none;
+    font-size: 14px;
+
+    .ttl {
+        position: relative;
+        z-index: 0;
+        padding: 13px 20px;
+        min-width: 120px;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0 0 20px rgba(#999,.5);
+    }
+    /*标题0*/
+    .ttl.default {
+        text-align: center;
+        border-radius: 4px;
+        color: #f8f8f8;
+        /*background:#000;
+        background: rgba(#000,.8);*/
+        border: 1px solid lighten( #000,20%);
+        border: 1px solid rgba(#000,.8);
+
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            background: #000;
+            filter: alpha(opacity=70);
+            opacity: .7;
+        }
+    }
+    /*标题1*/
+    .ttl.success {
+        text-align: center;
+        border-radius: 4px;
+        color: darken( $text-success,10%);
+        /*background: $text-success;
+        background: rgba($text-success,.2);*/
+        border: 1px solid lighten( $text-success,20%);
+        border: 1px solid rgba($text-success,.3);
+
+        ._bg {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            background: $text-success;
+            filter: alpha(opacity=10);
+            opacity: .1;
+        }
+    }
+    /*标题2*/
+    .ttl.warning {
+        color: darken( $text-warning,10%);
+        border: 1px solid lighten( $text-warning,20%);
+        border: 1px solid rgba($text-warning,.3);
+
+        ._bg {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            background: $text-warning;
+            filter: alpha(opacity=10);
+            opacity: .1;
+        }
+    }
+    /*标题3*/
+    .ttl.danger {
+        color: darken( $text-danger,10%);
+        border: 1px solid lighten( $text-danger,20%);
+        border: 1px solid rgba($text-danger,.3);
+
+        ._bg {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            background: $text-danger;
+            filter: alpha(opacity=10);
+            opacity: .1;
+        }
+    }
+    /*标题4*/
+    .ttl.info {
+        color: darken( $text-info,10%);
+        border: 1px solid lighten( $text-info,10%);
+        border: 1px solid rgba($text-info,.3);
+
+        ._bg {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            background: $text-info;
+            filter: alpha(opacity=10);
+            opacity: .1;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+
+
+/* 全局 字体 */
+
+$font-family: 'Microsoft YaHei','Helvetica Neue', Helvetica, Arial, 'Hiragino Sans GB', sans-serif !default;
+
+/* 整体颜色 */
+
+// 主色 用于导选中和默认状态的导航
+$text-primary: #003399;
+
+// 信息文字
+$text-info: #5bc0de;
+
+// 成功  用于导选中和默认状态的导航
+$text-success: #3faa30;
+
+// 警告 用于登录提示
+$text-warning: #f5cb41;
+
+// 危险 用户热门推荐+最优方案
+$text-danger: #f1091c;
+
+// text-muted 默认没选中的样式
+$text-muted: #5b5e6a;
+
+// text-df 默认标题
+$text-df: #1e2128;
+
+
+// h1~h6 用户热门推荐+最优方案
+$text-h: #1e2128;
+$text-ttl: #2d353c;
+
+// 用于内容正文
+$text-content: #25b5e6;
+
+// 内容灰色
+$text-gray: #8d8d97;
+
+// nav-map link
+$nav-map: #5c5f6b;
+
+// 用于登录提示文字+搜索提示文字
+$text-placeholer: #8c8c96;
+
+
+// 文本的hover背景
+$bg-hover: #f1f1f1;//#f0f3f5;
+
+
+// 按钮激活的active背景
+$bg-active: #003399;
+$font-color:#333;
+$font-size: 14px;
+$line-height: 1.5;
+$body-bg: #fff;
+$bg-white: #fff;
+$text-white:#fff;
+
+// line 线条
+$line:#f2f2f2;
+$line-blod: #ddd;
+
+
+// header top bg
+$index-top-bg: #f2f2f2;
+
+// p color
+$index-top-color: #5b5e6a;
+
+// h 标题背景
+$pricevs-ttl-bg: #f5f8fa;
+
+// h 标题颜色
+$pricevs-ttl-color: #293239;
+
+// 红色
+$pricevs-danger: $text-danger;
+
+// 时间 color
+$time-color: #bfbfbf;
+
+

@@ -1,0 +1,130 @@
+
+@import "../var.scss";
+
+.reg{}
+
+.reg-hd{}
+
+.reg-hd-link {
+    line-height: 66px;
+    font-size: 16px;
+
+    a {
+        color: $text-danger;
+    }
+}
+
+.reg-cnt {
+    background:#fbf9f9;
+}
+.reg-cnt-box {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0;
+
+
+
+    ._item {
+        line-height: 44px;
+        color: #333;
+        font-size:.1px;
+        font-size:calc(0px + 0px);
+
+        > * {
+            font-size: 14px;
+        }
+
+        label {
+            display: inline-block;
+            width: 80px;
+            margin-right: 10px;
+            text-align: right;
+        }
+
+        input {
+            width: 280px;
+            height: 44px;
+            line-height: 20px;
+            padding: 11px 10px;
+            border: 1px solid #ddd;
+            border-radius:0;
+            box-shadow:none;
+            outline:none;
+        }
+
+
+        &._item-yzm {
+            line-height: 44px;
+            white-space: nowrap;
+
+            > * {
+                font-size: 14px;
+            }
+
+            label {
+                display: inline-block;
+                line-height: 44px;
+                vertical-align: middle;
+            }
+
+            ._yzm-txt {
+                width: 180px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            ._yzm-btn {
+                height: 44px;
+                display: inline-block;
+                text-align: center;
+                vertical-align: middle;
+                width: 100px;
+                border: 1px solid $line-blod;
+                border-left: none;
+            }
+        }
+
+        + ._item {
+            margin-top: 20px;
+        }
+
+        &._item-ck {
+            line-height: 20px;
+
+            input[type=checkbox] {
+                margin-left: 90px;
+                margin-right: 5px;
+                padding: 0;
+                width: 14px;
+                height: 14px;
+                font-size: 14px;
+                vertical-align: middle;
+                border: none;
+            }
+
+            label {
+                display: inline;
+                vertical-align: middle;
+                cursor: pointer;
+            }
+
+            a {
+                font-size: 14px;
+                margin-left: -15px;
+                vertical-align: middle;
+            }
+        }
+
+        ._submit {
+            margin-left: 90px;
+            display: inline-block;
+            width: 280px;
+            line-height: 44px;
+            text-align: center;
+            background: $bg-active;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}

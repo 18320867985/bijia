@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../../static/css/cstFonts/member/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/view/member.css" />
+    <!--[if lte IE 8]>
+        <script src="../../static/js/html5shiv.js"  type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+
+   
+</head>
+
+<body class="review">
+
+    <!--header-->
+    <include src="header.html"></include>
+    <!--content -->
+    <section class="clearfix container relative  common-cnt">
+
+        <!--content-->
+        <div class="member-content fr">
+            <div class="title">认证资料</div>
+
+            <div class="content">
+                <div class="identity">
+                    <div class="infor">
+                        <span class="icon">*</span>
+                        <span>身份证正反面：</span>
+                    </div>
+
+                    <div class="identity-wrap">
+                        <div class="identity-front-img bg">
+                            <div class="btn-wrap">
+                                <div class="btn">
+                                    <span>上传正面</span>
+                                    <input type="file" accept="image/png, image/jpeg, image/gif, image/jpg">
+                                </div>
+                            </div>
+
+                        </div>
+                        <span class="tips">(建议上传尺寸：272 * 170PX）</span>
+
+                    </div>
+                    <div class="identity-wrap">
+                        <div class="identity-back-img bg">
+                            <div class="btn-wrap">
+                                <div class="btn">
+                                    <span>上传反面</span>
+                                    <input type="file" accept="image/png, image/jpeg, image/gif, image/jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="tips">(建议上传尺寸：272 * 170PX）</span>
+
+                    </div>
+
+                </div>
+
+                <div class="license">
+                    <div class="infor">
+                        <span class="icon">*</span>
+                        <span>营业执照：</span>
+                    </div>
+
+                    <div class="license-wrap">
+                        <div class="license-img bg">
+                            <div class="btn-wrap">
+                                <div class="btn">
+                                    <span>上传执照</span>
+                                    <input type="file" accept="image/png, image/jpeg, image/gif, image/jpg">
+                                </div>
+                            </div>
+
+                        </div>
+                        <span class="tips">(建议上传尺寸：宽：272PX ）</span>
+
+                    </div>
+
+
+                </div>
+                <div class="shopPhoto">
+                    <div class="infor">
+                        <span class="icon">*</span>
+                        <span>店铺照片：</span>
+                    </div>
+
+                    <div class="shopPhoto-wrap">
+                        <div class="shopPhoto-img bg">
+                            <div class="btn-wrap">
+                                <div class="btn">
+                                    <span>上传店铺</span>
+                                    <input type="file" accept="image/png, image/jpeg, image/gif, image/jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="tips">(建议上传尺寸：宽：272PX ）</span>
+
+                    </div>
+
+
+                </div>
+
+                <a href="index.html" class="back">返回</a>
+                <a class="submit">提交审核</a>
+            </div>
+
+        </div>
+
+        <!--nav-->
+        <div class="member-nav">
+            <include src="../../template/member-nav.html" data-nav data-index="0"></include>
+
+        </div>
+
+
+    </section>
+    <div class="success-wrap review-success-wrap">
+        <div class="_mask"></div>
+        <div class="success">
+            <img src="../../static/images/member/hyzx-zdh-tx.png" />
+            <p class="approval">恭喜您,认证资料审核通过</p>
+            <img src="../../static/images/member/Registration-Publicnumber.png" />
+            <p class="subscribe">关注公众账号，获取更多权限</p>
+            <p class="skip"> <span>8</span>秒后自动跳转会员中心</p>
+            <a href="https://www.sujin1688.com" class="goIndex">首页逛逛</a>
+            <a href="index.html" class="goMember">去查看</a>
+        </div>
+    </div>
+
+    <!--footer-->
+
+    <include src="../../template/_footer.html"></include>
+
+
+
+    <!--check css-->
+    <script src="../../static/js/modernizr-2.6.2.min.js" defer type="text/javascript" charset="utf-8"></script>
+    <!--css3 prefix-->
+    <script src="../../static/js/prefix-css3.min.js" defer type="text/javascript" charset="utf-8"></script>
+    <script src="../../static/js/common-cdn.js" defer type="text/javascript" charset="utf-8"></script>
+
+    <!--[if lte IE 8]>
+         <link rel="stylesheet" type="text/css" href="../../static/css/ie8.css" />
+         <script src="../../static/js/ie8.js" defer type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="../../static/css/ie9.css" />
+        <script src="../../static/js/ie9.js" defer type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+
+    <script data-parent="umd" data-umd="review" defer src="../../static/js/view/member.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

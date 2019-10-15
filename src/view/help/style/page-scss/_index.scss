@@ -1,0 +1,51 @@
+
+@import "../var.scss";
+.index-content {
+     margin-bottom:30px;
+    .company-img {
+        width: 994px;
+        height: 400px;
+        background-image: url("/static/images/help/bzzx-qyjs-background-01.jpg")
+    }
+
+    .content {
+        width: 788px;
+        height: 312px;
+        margin: -50px auto 0 auto;
+        box-sizing: border-box;
+        padding: 35px 30px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.14);
+        text-align: center;
+        p{
+            line-height:1.2;
+        }
+        .content-tit {
+            font-size: 32px;
+            color:$pricevs-ttl-color ;
+            font-weight: bold;
+        }
+
+        .content-smalltit {
+            font-size: 16px;
+            color: #bfbfbf;
+            margin:18px 0;
+            &:after {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 4px;
+                background-color: $bg-active;
+                margin:8px auto 0 auto;
+            }
+        }
+
+        .content-des {
+            color:$index-top-color;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+    }
+}
+
+
